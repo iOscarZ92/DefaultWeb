@@ -1,0 +1,195 @@
+@import '/assets/css/variables.css';
+.footer-main {
+    background: var(--color-texto-gris);
+    color: var(--color-texto-claro);
+    /* padding: 1.3rem 4rem; */
+    padding-top: 4rem;
+    padding-right: 7rem;
+    padding-bottom: 4rem;
+    padding-left: 7rem;
+}
+
+.footer-middle {
+    background: var(--background-gris-claro);
+    color: var(--color-texto-negro);
+    font-family: var(--fuente-secundaria);
+    /* padding: 1.3rem 6rem; */
+    padding-top: 2rem;
+    padding-right: 9rem;
+    padding-bottom: 2rem;
+    padding-left: 9rem;
+}
+
+.footer-down {
+    background: var(--color-banorte);
+    font-family: var(--fuente-secundaria);
+    color: var(--color-texto-claro);
+    padding: 1.3rem 6rem;
+}
+
+@media (min-width: 768px) {
+    .footer-down {
+        padding-right: 10rem;
+        padding-left: 9rem;
+        font-size: 11pt;
+        height: 60px;
+        padding-top: 20px;
+    }
+}
+
+.footer-down a {
+    text-decoration: none;
+    color: var(--color-texto-claro);
+    font-family: var(--fuente-secundaria);
+}
+
+.termino-legal-a {
+    border-right: 2px solid var(--color-texto-claro);
+    border-bottom: none;
+}
+
+.logo-footer {
+    margin: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-footer>img {
+    height: 25px;
+    width: auto;
+}
+
+.logo-footer>div {
+    display: flex;
+    align-items: center;
+}
+
+.logo-footer>div>span {
+    font-size: 14pt !important;
+}
+
+.logo-footer>div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20pt;
+    margin: 0 11px;
+}
+
+.borde-derecho {
+    border-right: 1px var(--color-texto-claro) solid;
+}
+
+.secciones-footer {
+    margin: 2rem 1rem;
+}
+
+.secciones-footer .seccion {
+    flex-flow: column;
+    display: flex;
+    line-height: 3rem !important;
+}
+
+.secciones-footer .seccion .titulo-seccion {
+    font-weight: bold;
+    font-size: var(--tamanio-18);
+}
+
+.secciones-footer .seccion a {
+    text-decoration: none;
+    color: var(--color-texto-claro);
+    font-family: var(--fuente-secundaria);
+}
+
+.justify-content-end {
+    justify-content: flex-end !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo-footer {
+        flex-direction: column;
+        padding: 20px 30% 24px 30px !important;
+    }
+    .logo-footer img {
+        height: 20px;
+        width: 220px;
+    }
+    .logo-footer>div {
+        margin-top: 18px;
+    }
+    .logo-footer>div>span {
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+    .footer-main {
+        padding-left: 0 !important;
+        padding-top: 5px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-main {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .footer-middle {
+        padding: 30px !important;
+    }
+    .footer-middle>a {
+        margin-left: 8px;
+    }
+    .footer-down {
+        padding: 30px !important;
+    }
+    .footer-down .row {
+        margin: 0 !important;
+    }
+    .footer-down .row>div,
+    .footer-down .row a>span {
+        padding: 0 !important;
+    }
+    .secciones-footer {
+        margin-left: 0 !important;
+        padding-left: 30px;
+    }
+    .seccion {
+        padding: 1rem 0;
+    }
+    .logo-footer {
+        padding-bottom: 3rem;
+        border-bottom: 1px solid var(--color-border-footer);
+        margin: 0 !important;
+    }
+    .titulo-seccion {
+        padding-bottom: 0.7rem;
+    }
+    .termino-legal-a {
+        width: 100%;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--color-texto-claro);
+        border-right: none;
+    }
+    .footer-legal {
+        justify-content: initial !important;
+        display: grid !important;
+        margin-left: 0 !important;
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+    .footer-legal a {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .footer-middle {
+        padding: 30px !important;
+    }
+    .footer-middle>a {
+        margin-left: 0;
+    }
+    .footer-middle>a>img {
+        height: 20px !important;
+        width: auto;
+    }
+}

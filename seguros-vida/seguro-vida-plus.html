@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=11;IE=9;" />
+    <link rel="shortcut icon" href="../assets/images/ico/favicon.ico" />
+    <meta name="sitedomain" content="www.segurosbanorte.com.mx" />
+    <meta name="country" content="México" />
+    <meta charset="utf-8" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Banorte | Seguros</title>
+    <!-- core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../assets/css/animate.min.css" rel="stylesheet" />
+    <link href="../assets/css/prettyPhoto.css" rel="stylesheet" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/seguros-style.css" rel="stylesheet" />
+    <link href="../assets/css/responsive.css" rel="stylesheet" />
+    <link href="../assets/css/accordion.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/jquery.bxslider.css" type="text/css" />
+    <link href="../assets/css/custom_seguros-vida.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="../assets/images/ico/apple-touch-icon-57-precomposed.png" />
+    <script src="../assets/js/jquery-3.3.1.js" type="text/javascript"></script>
+</head>
+
+<body class="homepage">
+    <div id="new-header">
+        <script type="text/javascript">
+            $("#new-header").load("../header.html");
+        </script>
+    </div>
+    <!-- STAGE INICIAL -->
+    <section class="inicio-area-2nivel" style="background-image: url(../assets/images/banner-vida-plus-NUEVO.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 map-content">
+                    <h1 class="texto-rojo">Protección Vida Plus</h1>
+                    <p class="animation animated-item-2">La tranquilidad que tus<br>seres queridos merecen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--MENU DETALLES -->
+    <div>
+    </div>
+    <div id="sub-bottom">
+        <div class="container">
+            <ul class="nav nav-tabs desktop-view">
+                <li class="active"><a href="#descripcion" data-toggle="tab">DESCRIPCIÓN</a> </li>
+                <li><a href="#paquetes" data-toggle="tab">PAQUETES Y COBERTURAS</a> </li>
+                <li><a href="#beneficios" data-toggle="tab">BENEFICIOS</a> </li>
+                <li><a href="#medios" data-toggle="tab">MEDIOS DE PAGO</a> </li>
+                <li><a href="#formas" data-toggle="tab">FORMAS DE PAGO</a> </li>
+                <li><a href="#requisitos" data-toggle="tab">REQUISITOS DE CONTRATACIÓN</a> </li>
+                <li><a href="#medioscontratacion" data-toggle="tab">MEDIOS DE CONTRATACIÓN</a> </li>
+            </ul>
+            <div id="drop-movil" class="movil-view">
+                <form>
+                    <div class="form-group">
+                        <select id="status" name="status" onchange="mostrar(this.value);" class="selector">
+                            <option value="contenido01">DESCRIPCIÓN</option>
+                            <option value="contenido02">PAQUETES Y COBERTURAS</option>
+                            <option value="contenido03">BENEFICIOS</option>
+                            <option value="contenido04">MEDIOS DE PAGO</option>
+                            <option value="contenido05">FORMAS DE PAGO</option>
+                            <option value="contenido06">REQUISITOS DE CONTRATACIÓN</option>
+                            <option value="contenido07">MEDIOS DE CONTRATACIÓN</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-9">
+            <div class="tab-content desktop-view">
+                <div class="tab-pane fade in active" id="descripcion">
+                    <h2 class="titulo-detalles">
+                        Protección Vida Plus</h2>
+                    <p class="titulo-detalles-contenido">
+                        Es un Seguro de Vida que cubre a nuestro Cliente y protege a sus Beneficiarios en caso de que fallezca, se diagnostique una enfermedad grave por primera vez y además brinda protección ante fallecimiento y hospitalización a causa de la enfermedad COVID-19.
+                        Contando con 4 paquetes: Básico, Deudor, Extensivo y Amplio.
+                    </p>
+                </div>
+                <div class="tab-pane fade " id="paquetes">
+                    <h2 class="titulo-detalles">
+                        Paquetes y Coberturas</h2>
+                    <div class="table-responsive">
+                        <table class="table-detalles">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Coberturas
+                                    </th>
+                                    <th>
+                                        Básico
+                                    </th>
+                                    <th>
+                                        Deudor
+                                    </th>
+                                    <th>
+                                        Extensivo
+                                    </th>
+                                    <th>
+                                        Amplio
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Fallecimiento
+                                    </td>
+                                    <td>
+                                        Desde $100,000
+                                    </td>
+                                    <td>
+                                        Desde $100,000
+                                    </td>
+                                    <td>
+                                        Desde $300,000
+                                    </td>
+                                    <td>
+                                        Desde $300,000
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Fallecimiento por SARS-CoV2(COVID-19)
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td>
+                                        $40,000
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Hospitalización por SARS-CoV2(COVID-19)
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td>
+                                        $40,000
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Enfermedades Graves
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td>
+                                        $40,000
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Muerte accidental
+                                    </td>
+                                    <td>
+                                        Desde $100,000
+                                    </td>
+                                    <td>
+                                        Opcional<br> Desde $100,000
+                                    </td>
+                                    <td>
+                                        Opcional<br> Desde $300,000
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Muerte accidental colectiva
+                                    </td>
+                                    <td>
+                                        Desde $100,000
+                                    </td>
+                                    <td>
+                                        Opcional<br> Desde $100,000
+                                    </td>
+                                    <td>
+                                        Opcional<br> Desde $300,000
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Anticipo por gastos de sepelio
+                                    </td>
+                                    <td>
+                                        <br /><br /> 35% de la Suma Asegurada
+                                    </td>
+                                    <td>
+                                        <br /><br /> 35% de la Suma Asegurada
+                                    </td>
+                                    <td>
+                                        <br /><br /> 35% de la Suma Asegurada
+                                    </td>
+                                    <td>
+                                        <br /><br /> 35% de la Suma Asegurada
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Anticipo por enfermedades terminales
+                                    </td>
+                                    <td>
+                                        <br /><br /> 25% de la Suma Asegurada
+                                    </td>
+                                    <td>
+                                        <br /><br /> 25% de la Suma Asegurada
+                                    </td>
+                                    <td>
+                                        <br /><br /> 25% de la Suma Asegurada
+                                    </td>
+                                    <td>
+                                        <br /><br /> 25% de la Suma Asegurada
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Pérdidas orgánicas
+                                    </td>
+                                    <td>
+                                        Opcional<br> Desde $100,000
+                                    </td>
+                                    <td>
+                                        Opcional<br> Desde $100,000
+                                    </td>
+                                    <td>
+                                        Opcional<br> Desde $100,000
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Pago de suma asegurada por invalidez total y permanente
+                                    </td>
+                                    <td rowspan="2">
+                                        Opcional<br> Desde $100,000
+                                    </td>
+                                    <td class="check_verde">
+                                    </td>
+                                    <td rowspan="2">
+                                        Opcional<br> Desde $300,000
+                                    </td>
+                                    <td class="minus_negro" rowspan="2">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Desde $100,000
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="beneficios">
+                    <h2 class="titulo-detalles">
+                        Beneficios</h2>
+                    <div class="table-responsive">
+                        Obtén los siguientes beneficios:
+                        <ul>
+                            <li>Respaldo para tu familia en los momentos que más lo necesita al incluir un anticipo por gastos de sepelio o enfermedades terminales y cobertura de accidentes.</li>
+                            <li>Tienes la posibilidad de complementar tu protección con las coberturas de invalidez y pérdidas orgánicas.</li>
+                            <li>Te ofrecemos tres tipos de planes basados en tus principales necesidades:
+                                <br/> Basico, deudor, extensivo.
+                            </li>
+                            <li>Contarás con protección extra, ya que te brinda protección ante:
+                                <ul>
+                                    <li>La enfermedad COVID-19, otorgando a tus beneficiarios la suma asegurada en caso de fallecimiento y un apoyo económico en caso de hospitalización por dicha enfermedad.</li>
+                                    <li>Si se te detecta por primera vez una enfermedad grave cubierta, se te otorgará un apoyo económico único.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br /> Sumas aseguradas:
+                        <ul>
+                            <li>Planes Básico y Deudor pueden contratarse en módulos de $100,000 hasta $1,000,000</li>
+                            <li>Plan Extensivo a partir de $300,000 con opción a elegir coberturas</li>
+                            <li>Plan Amplio a partir de $300,000 hasta $1,000,000 con coberturas ante la enfermedad COVID-19.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="medios">
+                    <h2 class="titulo-detalles">
+                        Medios de pago</h2>
+                    <div class="table-responsive">
+                        Los pagos deben ser en M.N. con cargo referenciado o cargo automático a través de los siguientes medios:
+                        <ul>
+                            <li>Efectivo</li>
+                            <li>Tarjeta de Crédito</li>
+                            <li>Tarjeta de Débito</li>
+                            <li>Cargo a Cuenta de Cheques</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="formas">
+                    <h2 class="titulo-detalles">
+                        Formas de pago</h2>
+                    <div class="table-responsive">
+                        <ul>
+                            <li>Anual</li>
+                            <li>Semestral</li>
+                            <li>Cuatrimestral</li>
+                            <li>Trimestral</li>
+                            <li>Mensual</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="requisitos">
+                    <h2 class="titulo-detalles">
+                        Requisitos de contratación</h2>
+                    <div class="table-responsive">
+                        <ul>
+                            <li>Las respuestas al cuestionario que se incluye en la solicitud deben ser negativas.</li>
+                            <li>El cliente no deberá tener un oficio o trabajo en que se realice frecuentemente actividades de alto riesgo.</li>
+                            <li>Presentar una relación peso-estatura: por sobrepeso, que sea menor o igual a 20 kg; y por abajo del peso, que sea menor o igual a 15 kg.</li>
+                            <li>Edad de 18 a 70 años , con cancelación a los 71 años.<br> La edad de aceptación para las coberturas Fallecimiento por SARS-CoV2(COVID-19), Hospitalización por SARS-CoV2(COVID-19) y Enfermedades Graves son de 18 a 69 años, con
+                                cancelación automática a los 70 años.
+                            </li>
+                            <li>Llenar la solicitud correspondiente.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="medioscontratacion">
+                    <h2 class="titulo-detalles">
+                        Medios de contratación</h2>
+                    <p>
+                        Si estás interesado en el Seguro Protección Vida Plus y quieres que un asesor te informe más sobre éste, <a href="\contacto\contacto.html" class="contacto"><b>ingresa aquí</b></a>
+                    </p>
+                </div>
+            </div>
+            <!--/tab-content-->
+            <div id="contenido-movil" class="movil-view">
+                <div id="contenido01" class="contenido-movil">
+                    <h2 class="titulo-detalles">
+                        Protección Vida Plus</h2>
+                    <p class="titulo-detalles-contenido">
+                        Es un Seguro de Vida que cubre a nuestro Cliente y protege a sus Beneficiarios en caso de que fallezca, se diagnostique una enfermedad grave por primera vez y además brinda protección ante fallecimiento y hospitalización a causa de la enfermedad COVID-19.
+                        Contando con 4 paquetes: Básico, Deudor, Extensivo y Amplio.
+                    </p>
+                </div>
+                <!--contenido01-->
+                <div id="contenido02" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">
+                        Paquetes y Coberturas</h2>
+                    <div class="table-movil">
+                        <table class="table-detalles">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Coberturas
+                                    </th>
+                                    <th>
+                                        Básico
+                                    </th>
+                                    <th>
+                                        Deudor
+                                    </th>
+                                    <th>
+                                        Extensivo
+                                    </th>
+                                    <th>
+                                        Amplio
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">
+                                        Fallecimiento
+                                    </td>
+                                    <td class="check_verde">
+                                    </td>
+                                    <td class="check_verde">
+                                    </td>
+                                    <td class="check_verde">
+                                    </td>
+                                    <td class="check_verde">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Desde $100,000
+                                    </td>
+                                    <td>
+                                        Desde $100,000
+                                    </td>
+                                    <td>
+                                        Desde $300,000
+                                    </td>
+                                    <td>
+                                        Desde $300,000
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Fallecimiento por SARS-CoV2(COVID-19)
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td class="check_verde">
+                                        $40,000
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Hospitalización por SARS-CoV2(COVID-19)
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td class="check_verde">
+                                        $40,000
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Enfermedades Graves
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                    <td class="check_verde">
+                                        $40,000
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Muerte accidental
+                                    </td>
+                                    <td class="check_verde">
+                                        Desde $100,000
+                                    </td>
+                                    <td>
+                                        Opcional<br> Desde $100,000
+                                    </td>
+                                    <td>
+                                        Opcional<br> Desde $300,000
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Muerte accidental colectiva
+                                    </td>
+                                    <td class="check_verde">
+                                        Desde $100,000
+                                    </td>
+                                    <td>
+                                        Opcional<br> Desde $100,000
+                                    </td>
+                                    <td>
+                                        Opcional<br> Desde $300,000
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Anticipo por gastos de sepelio
+                                    </td>
+                                    <td class="check_verde">
+                                        35% de la Suma Asegurada
+                                    </td>
+                                    <td class="check_verde">
+                                        35% de la Suma Asegurada
+                                    </td>
+                                    <td class="check_verde">
+                                        35% de la Suma Asegurada
+                                    </td>
+                                    <td class="check_verde">
+                                        35% de la Suma Asegurada
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Anticipo por enfermedades terminales
+                                    </td>
+                                    <td class="check_verde">
+                                        25% de la Suma Asegurada
+                                    </td>
+                                    <td class="check_verde">
+                                        25% de la Suma Asegurada
+                                    </td>
+                                    <td class="check_verde">
+                                        25% de la Suma Asegurada
+                                    </td>
+                                    <td class="check_verde">
+                                        25% de la Suma Asegurada
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Pérdidas orgánicas
+                                    </td>
+                                    <td>
+                                        Opcional<br> Desde $100,000
+                                    </td>
+                                    <td>
+                                        Opcional<br> Desde $100,000
+                                    </td>
+                                    <td>
+                                        Opcional<br> Desde $100,000
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Pago de suma asegurada por invalidez total y permanente
+                                    </td>
+                                    <td>
+                                        Opcional<br> Desde $100,000
+                                    </td>
+                                    <td class="check_verde">
+                                        Desde $100,000
+                                    </td>
+                                    <td>
+                                        Opcional<br> Desde $300,000
+                                    </td>
+                                    <td class="minus_negro">
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <!--/.table-movil-->
+                </div>
+                <!--contenido02-->
+                <div id="contenido03" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">
+                        Beneficios</h2>
+                    <div class="table-movil">
+                        Obtén los siguientes beneficios:
+                        <ul>
+                            <li>Respaldo para tu familia en los momentos que más lo necesita al incluir un anticipo por gastos de sepelio o enfermedades terminales y cobertura de accidentes.</li>
+                            <li>Tienes la posibilidad de complementar tu protección con las coberturas de invalidez y pérdidas orgánicas.</li>
+                            <li>Te ofrecemos tres tipos de planes basados en tus principales necesidades:
+                                <br/> Basico, deudor, extensivo.
+                            </li>
+                            <li>Contarás con protección extra, ya que te brinda protección ante:
+                                <ul>
+                                    <li>La enfermedad COVID-19, otorgando a tus beneficiarios la suma asegurada en caso de fallecimiento y un apoyo económico en caso de hospitalización por dicha enfermedad.</li>
+                                    <li>Si se te detecta por primera vez una enfermedad grave cubierta, se te otorgará un apoyo económico único.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br /> Sumas aseguradas:
+                        <ul>
+                            <li>Planes Básico y Deudor pueden contratarse en módulos de $100,000 hasta $1,000,000</li>
+                            <li>Plan Extensivo a partir de $300,000 con opción a elegir coberturas</li>
+                            <li>Plan Amplio a partir de $300,000 hasta $1,000,000 con coberturas ante la enfermedad COVID-19.</li>
+                        </ul>
+                    </div>
+                    <!--/.table-movil-->
+                </div>
+                <!--contenido02-->
+                <div id="contenido04" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">
+                        Medios de pago</h2>
+                    <div class="table-movil">
+                        Los pagos deben ser en M.N. con cargo referenciado o cargo automático a través de los siguientes medios:
+                        <ul>
+                            <li>Efectivo</li>
+                            <li>Tarjeta de Crédito</li>
+                            <li>Tarjeta de Débito</li>
+                            <li>Cargo a Cuenta de Cheques</li>
+                        </ul>
+                    </div>
+                    <!--/.table-movil-->
+                </div>
+                <!--contenido03-->
+                <div id="contenido05" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">
+                        Formas de pago</h2>
+                    <div class="table-movil">
+                        <ul>
+                            <li>Anual</li>
+                            <li>Semestral</li>
+                            <li>Cuatrimestral</li>
+                            <li>Trimestral</li>
+                            <li>Mensual</li>
+                        </ul>
+                    </div>
+                    <!--/.table-movil-->
+                </div>
+                <!--contenido04-->
+                <div id="contenido06" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">
+                        Requisitos de contratación</h2>
+                    <div class="table-movil">
+                        <ul>
+                            <li>Las respuestas al cuestionario que se incluye en la solicitud deben ser negativas.</li>
+                            <li>El cliente no deberá tener un oficio o trabajo en que se realice frecuentemente actividades de alto riesgo.</li>
+                            <li>Presentar una relación peso-estatura: por sobrepeso, que sea menor o igual a 20 kg; y por abajo del peso, que sea menor o igual a 15 kg.</li>
+                            <li>Edad de 18 a 70 años, con cancelación a los 71 años.<br> La edad de aceptación para las coberturas Fallecimiento por SARS-CoV2(COVID-19), Hospitalización por SARS-CoV2(COVID-19) y Enfermedades Graves son de 18 a 69 años, con
+                                cancelación automática a los 70 años.
+                            </li>
+                            <li>Llenar la solicitud correspondiente.</li>
+                        </ul>
+                    </div>
+                    <!--/.table-movil-->
+                </div>
+                <!--contenido06-->
+                <div id="contenido07" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">
+                        Medios de contratación</h2>
+                    <p>
+                        Si estás interesado en el Seguro Protección Vida Plus y quieres que un asesor te informe más sobre éste, <a href="\contacto\contacto.html" class="contacto"><b>ingresa aquí</b></a>
+                    </p>
+                </div>
+                <!--contenido07 Medios de Contratacion-->
+            </div>
+            <!--/#contenido-movil-->
+        </div>
+        <div class="col-md-3 shortcode-item">
+            <div class="page-bar">
+                <span class="page-bar-titulo">¿Necesitas más ayuda?</span>
+                <p>
+                    Contacta a alguno de nuestros asesores especializado</p>
+                <ul class="page-bar-contacto">
+                    <li><a href="\contacto\contacto.html" id="chatenvivo"><i class="fa fa-comments close_rojo"></i>Chat en vivo</a></li>
+                    <li><a href="\contacto\contacto.html" class="contacto"><i class="fa fa-envelope-o close_rojo"></i>Email</a></li>
+                    <li><i class="icon-telefono"></i>Centro de Contacto
+                        <br /> 800-837-1133
+                    </li>
+                </ul>
+                <h3>
+                </h3>
+                <ul class="page-bar-opciones">
+                    <li><a href="/seguros-vida/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><a href="/seguros-vida/asistencia-inmediata.html">Asistencia Inmediata</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="new-footer">
+        <script type="text/javascript">
+            $("#new-footer").load("../footer.html");
+        </script>
+    </div>
+    <!--empresasBanorte-->
+    <!-- Analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-23249775-5']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+
+</html>

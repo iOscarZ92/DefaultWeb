@@ -1,0 +1,21 @@
+ul.menu-top-content li a {
+  font-family:'Gotham Book', sans-serif;
+  display: block;
+  font-size:17px;
+  color: #fff; 
+  padding:0px 15px;
+  line-height: 64px;
+  text-align: center;  
+  cursor: pointer;
+}
+.resultados-busqueda { 
+    display:none; /* block */
+	background-color:#f7f7f7;
+	margin-top:10px;
+	padding:25px;
+}
+.table-detalles tbody tr td a{
+	font-size:16px;
+	color:#B01657;
+	white-space:none;
+}

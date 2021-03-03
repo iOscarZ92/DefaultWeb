@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="shortcut icon" href="../assets/images/ico/favicon.ico" />
+    <meta name="sitedomain" content="www.segurosbanorte.com.mx" />
+    <meta name="country" content="México" />
+    <meta charset="utf-8" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Banorte | Seguros</title>
+    <!-- core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../assets/css/animate.min.css" rel="stylesheet" />
+    <link href="../assets/css/prettyPhoto.css" rel="stylesheet" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/seguros-style.css" rel="stylesheet" />
+    <link href="../assets/css/responsive.css" rel="stylesheet" />
+    <link href="../assets/css/accordion.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/jquery.bxslider.css" type="text/css" />
+    <link href="../assets/css/custom_seguros-autos.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="../assets/images/ico/apple-touch-icon-57-precomposed.png" />
+    <script src="../assets/js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function Cotizar(target) {
+            document.getElementById('txtResultado').value = target.value;
+
+        }
+
+        function CotizarM(target) {
+            document.getElementById('txtResultadoM').value = target.value;
+
+        }
+    </script>
+</head>
+<!--/head-->
+
+<body class="homepage">
+    <div id="new-header">
+        <script type="text/javascript">
+            $("#new-header").load("../header.html");
+        </script>
+    </div>
+    <!-- STAGE INICIAL -->
+    <section class="inicio-area-2nivel" style="background-image:url(../assets/images/basico-estandarizado.jpg);z-index:1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h1 class="texto-rojo">Seguro Básico Estandarizado</h1>
+                    <p class="animation animated-item-2">La protección que siempre te<br/>acompaña en tu camino</p>
+                </div>
+            </div>
+            <!--/.row-->
+        </div>
+        <!--/.container-->
+    </section>
+    <div></div>
+    <!--Para ajustar menu-->
+    <!--MENU DETALLES -->
+    <div id="sub-bottom">
+        <div class="container">
+            <ul class="nav nav-tabs desktop-view">
+                <li class="active">
+                    <a href="#descripcion" data-toggle="tab">DESCRIPCIÓN</a>
+                </li>
+                <li>
+                    <a href="#coberturas" data-toggle="tab">COBERTURAS</a>
+                </li>
+                <li>
+                    <a href="#beneficios" data-toggle="tab">BENEFICIOS</a>
+                </li>
+                <li>
+                    <a href="#medios" data-toggle="tab">MEDIOS DE PAGO</a>
+                </li>
+                <li>
+                    <a href="#formas-de-pago" data-toggle="tab">FORMAS DE PAGO</a>
+                </li>
+                <li>
+                    <a href="#requisitos" data-toggle="tab">REQUISITOS DE CONTRATACIÓN</a>
+                </li>
+            </ul>
+            <div id="drop-movil" class="movil-view">
+                <form>
+                    <div class="form-group">
+                        <select id="status" name="status" onChange="mostrar(this.value);" class="selector">
+							<option value="contenido01">DESCRIPCIÓN</option>
+                            <option value="contenido02">COBERTURA</option>
+                            <option value="contenido03">BENEFICIOS</option>
+							<option value="contenido04">MEDIOS DE PAGO</option>
+							<option value="contenido05">FORMAS DE PAGO</option>
+                            <option value="contenido06">REQUISITOS DE CONTRATACIÓN</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-9">
+            <div class="tab-content desktop-view">
+                <div class="tab-pane fade in active" id="descripcion">
+                    <h2 class="titulo-detalles">Seguro básico estandarizado</h2>
+                    <p class="titulo-detalles-contenido">El Seguro Básico Estandarizado es un seguro que protege al Asegurado, o a cualquier conductor del Vehículo Asegurado, por la responsabilidad civil en que incurra al verse involucrado en un accidente que ocasione daños a terceros tanto
+                        en sus bienes como en sus personas.</p>
+                    <br/>
+                    <h2 class="page-bar-titulo"><b>Cotizar</h2></b>
+                        <div class="recuadro-gris">
+                            <p class="subtitulo-tab2">Cotiza tu Seguro Básico Estandarizado de Automóviles</p>
+                            <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="#.php">
+                                <div class="col-sm-6 corrector-15">
+                                    <div class="form-group">
+                                        <label for="Select1">Estado</label>
+                                        <select id="Select1" onchange="Cotizar(this);" class="selector">
+                                            <option value="$ 0.00">Seleccionar</option>
+                                            <option value="$ 1,069">Aguascalientes</option>
+                                            <option value="$ 557">Baja California Norte</option>
+                                            <option value="$ 866">Baja California Sur</option>
+                                            <option value="$ 1,650">Campeche</option>
+                                            <option value="$ 1,324">Coahuila</option>
+                                            <option value="$ 977">Colima</option>
+                                            <option value="$ 1,024">Chiapas</option>
+                                            <option value="$ 1,319">Chihuahua</option>
+                                            <option value="$ 1,168">Cd. de México</option>
+                                            <option value="$ 1,056">Durango</option>
+                                            <option value="$ 899">Guanajuato</option>
+                                            <option value="$ 1,441">Guerrero</option>
+                                            <option value="$ 1,111">Hidalgo</option>
+                                            <option value="$ 1,142">Jalisco</option>
+                                            <option value="$ 1,168">Estado de México</option>
+                                            <option value="$ 975">Michoacán</option>
+                                            <option value="$ 1,237">Morelos</option>
+                                            <option value="$ 1,257">Nayarit</option>
+                                            <option value="$ 1,533">Nuevo León</option>
+                                            <option value="$ 1,174">Oaxaca</option>
+                                            <option value="$ 1,177">Puebla</option>
+                                            <option value="$ 975">Querétaro</option>
+                                            <option value="$ 1,657">Quintana Roo</option>
+                                            <option value="$ 1,062">San Luis Potosi</option>
+                                            <option value="$ 1,702">Sinaloa</option>
+                                            <option value="$ 1,202">Sonora</option>
+                                            <option value="$ 1,652">Tabasco</option>
+                                            <option value="$ 1,267">Tamaulipas</option>
+                                            <option value="$ 1,456">Tlaxcala</option>
+                                            <option value="$ 1,203">Veracruz</option>
+                                            <option value="$ 1,658">Yucatán</option>
+                                            <option value="$ 991">Zacatecas</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5 corrector-15">
+                                    <div class="form-group">
+                                        <label for="txtResultado">Precio</label>
+                                        <input id="txtResultado" value="$ 0.00" type="text" name="name" class="form-control" placeholder="Precio Anual" required/>
+                                    </div>
+                                </div>
+                            </form><br/>
+                            <p>Anual</p>
+                            <div class="col-sm-5 corrector-15">
+                                <ul class="vinietas-guinda">
+                                    <li>Los precios no incuyen IVA.</li>
+                                    <li>No aplica promoción de meses sin intereses.</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                <div class="tab-pane fade" id="coberturas">
+                    <h2 class="titulo-detalles">Cobertura Básica</h2>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div class="media accordion-inner">
+                                <div class="table-responsive">
+                                    <p>El límite máximo de responsabilidad que quedará cubierto será por un monto de $250,000 para el pago de daños a terceros en sus bienes y/o personas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="beneficios">
+                    <h2 class="titulo-detalles">Beneficios</h2>
+                    <ul>
+                        <li>No hay pago de deducible en caso de siniestro.</li>
+                        <li>Facilidad y rapidez para la cotización y contratación.</li>
+                        <li>Cuentas con el Centro de Contacto de Seguros Banorte para todas tus dudas e inquietudes: 800 837 1133</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="medios">
+                    <h2 class="titulo-detalles">Medios de pago</h2>
+                    <p>Contamos con diversos medios de pago para tu Seguro Básico Estandarizado:</p>
+                    <ul>
+                        <li>Efectivo</li>
+                        <li>Tarjeta de Crédito</li>
+                        <li>Tarjeta de Débito</li>
+                        <li>Cuenta de Cheques</li>
+                        <li>Cuenta CLABE</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="requisitos">
+                    <h2 class="titulo-detalles">Requisitos de Contratación</h2>
+                    <p>Para la contratación debes tener a la mano:</p>
+                    <ul>
+                        <li>Datos del Contratante: Nombre, R.F.C., Domicilio Completo, Teléfono y Correo Electrónico.</li>
+                        <li>Datos del Vehículo: Marca, Submarca, Tipo, Versión, Modelo, Placas, Número de Serie y Número de Motor.</li>
+                        <li>Contar con licencia de conducir vigente.</li>
+                    </ul>
+                    </br>
+                    <b>El Seguro Básico Estandarizado de Automóviles, no aplica para: </b>
+                    <ul>
+                        <li>Motocicletas, taxis, camiones de más de 3.5 toneladas, tractocamiones, autobuses, remolques.</li>
+                        <li>Vehículos de Flotilla.</li>
+                        <li>Autos con uso de servicio público, transporte privado, público de carga, público federal de carga o de renta diaria.</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="formas-de-pago">
+                    <h2 class="titulo-detalles">Formas de pago</h2>
+                    <p>Puedes elegir el plazo de pago de tu preferencia:</p>
+                    <ul>
+                        <li>Anual</li>
+                        <li>Semestral</li>
+                        <li>Trimestral</li>
+                        <li>Mensual</li>
+                    </ul>
+                </div>
+            </div>
+            <!--/tab-content-->
+            <div id="contenido-movil" class="movil-view">
+                <!--/#contenido01-->
+                <div id="contenido01" class="contenido-movil">
+                    <h2 class="titulo-detalles">Seguro Básico Estandarizado</h2>
+                    <p class="titulo-detalles-contenido">El Seguro Básico Estandarizado es un seguro que protege al Asegurado, o a cualquier conductor del Vehículo Asegurado, por la responsabilidad civil en que incurra al verse involucrado en un accidente que ocasione daños a terceros tanto
+                        en sus bienes como en sus personas.</p>
+                    <h2 class="page-bar-titulo"><b>Cotizar</h2></b>
+                        <div class="recuadro-gris">
+                            <p class="subtitulo-tab2">Cotiza tu Seguro Básico Estandarizado de Automóviles</p>
+                            <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="#.php">
+                                <div class="col-sm-6 corrector-15">
+                                    <div class="form-group">
+                                        <label for="Select2">Estado</label>
+                                        <select id="Select2" onchange="CotizarM(this);" class="selector">
+                                            <option value="$ 0.00">Seleccionar</option>
+                                            <option value="$ 1,069">Aguascalientes</option>
+                                            <option value="$ 557">Baja California Norte</option>
+                                            <option value="$ 866">Baja California Sur</option>
+                                            <option value="$ 1,650">Campeche</option>
+                                            <option value="$ 1,324">Coahuila</option>
+                                            <option value="$ 977">Colima</option>
+                                            <option value="$ 1,024">Chiapas</option>
+                                            <option value="$ 1,319">Chihuahua</option>
+                                            <option value="$ 1,168">Cd. de México</option>
+                                            <option value="$ 1,056">Durango</option>
+                                            <option value="$ 899">Guanajuato</option>
+                                            <option value="$ 1,441">Guerrero</option>
+                                            <option value="$ 1,111">Hidalgo</option>
+                                            <option value="$ 1,142">Jalisco</option>
+                                            <option value="$ 1,168">Estado de México</option>
+                                            <option value="$ 975">Michoacán</option>
+                                            <option value="$ 1,237">Morelos</option>
+                                            <option value="$ 1,257">Nayarit</option>
+                                            <option value="$ 1,533">Nuevo León</option>
+                                            <option value="$ 1,174">Oaxaca</option>
+                                            <option value="$ 1,177">Puebla</option>
+                                            <option value="$ 975">Querétaro</option>
+                                            <option value="$ 1,657">Quintana Roo</option>
+                                            <option value="$ 1,062">San Luis Potosi</option>
+                                            <option value="$ 1,702">Sinaloa</option>
+                                            <option value="$ 1,202">Sonora</option>
+                                            <option value="$ 1,652">Tabasco</option>
+                                            <option value="$ 1,267">Tamaulipas</option>
+                                            <option value="$ 1,456">Tlaxcala</option>
+                                            <option value="$ 1,203">Veracruz</option>
+                                            <option value="$ 1,658">Yucatán</option>
+                                            <option value="$ 991">Zacatecas</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5 corrector-15">
+                                    <div class="form-group">
+                                        <label for="txtResultadoM">Precio</label>
+                                        <input id="txtResultadoM" value="$ 0.00" type="text" name="name" class="form-control" placeholder="Precio Anual" required/>
+                                    </div>
+                                </div>
+                            </form><br/>
+                            <p>Anual</p>
+                            <div class="col-sm-5 corrector-15">
+                                <ul class="vinietas-guinda">
+                                    <li>Los precios no incuyen IVA.</li>
+                                    <li>No aplica promoción de meses sin intereses.</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                <!--/#contenido01-->
+                <div id="contenido02" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">Cobertura total</h2>
+                    </p>
+                    <div class="table-movil">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Coberturas</th>
+                                    <th class="linea-th">Integral</th>
+                                    <th class="linea-th">Protegido plus</th>
+                                    <th class="linea-th">Protegido</th>
+                                    <th class="linea-th th14">Preventivo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="concepto">Daños Materiales</td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="concepto">Rotura de Cristales</td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="concepto">Robo Total</td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="concepto">Responsabilidad civil, daños a terceros</td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="concepto">Equipo especial y/o Adaptaciones y Conversiones</td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="concepto">Muerte del Conductor por Accidente Automovilístico</td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="concepto">Gastos Médicos Ocupantes</td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="concepto">Responsabilidad Civil</td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="concepto">Asistencia Jurídica</td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="concepto">Asistencia Vehicular</td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td class="td14">Opcional</td>
+                                    <td class="td14">Opcional</td>
+                                </tr>
+                                <tr>
+                                    <td class="concepto">EMME Auto Protegido</td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                    <td class="td14">Opcional</td>
+                                </tr>
+                                <tr>
+                                    <td class="concepto">Asistencia Jurídica</td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="minus_negro"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="concepto">Asistencia Vehicular</td>
+                                    <td class="td14">Opcional</td>
+                                    <td class="td14">Opcional</td>
+                                    <td class="td14">Opcional</td>
+                                    <td class="td14">Opcional</td>
+                                </tr>
+                                <tr>
+                                    <td class="concepto">EMME Auto Protegido</td>
+                                    <td class="td14">Opcional</td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                    <td>
+                                        <div class="check_verde"></div>
+                                    </td>
+                                    <td class="td14">Opcional</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--/.table-movil-->
+                </div>
+                <!--/#contenido02-->
+                <div id="contenido03" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">Beneficios</h2>
+                    <ul>
+                        <li>No hay pago de deducible en caso de siniestro.</li>
+                        <li>Facilidad y rapidez para la cotización y contratación.</li>
+                        <li>Cuentas con el Centro de Contacto de Seguros Banorte para todas tus dudas e inquietudes: 800 837 1133</li>
+                    </ul>
+                </div>
+                <div id="contenido04" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">Medios de pago</h2>
+                    <p>Contamos con diversos medios de pago para tu Seguro Básico Estandarizado:</p>
+                    <ul>
+                        <li>Efectivo</li>
+                        <li>Tarjeta de Crédito</li>
+                        <li>Tarjeta de Débito</li>
+                        <li>Cuenta de Cheques</li>
+                        <li>Cuenta CLABE</li>
+                    </ul>
+                </div>
+                <div id="contenido05" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">Formas de pago</h2>
+                    <p>Puedes elegir el plazo de pago de tu preferencia:</p>
+                    <ul>
+                        <li>Anual</li>
+                        <li>Semestral</li>
+                        <li>Trimestral</li>
+                        <li>Mensual</li>
+                    </ul>
+                </div>
+                <div id="contenido06" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">Requisitos de Contratación</h2>
+                    <p>Para la contratación debes tener a la mano:</p>
+                    <ul>
+                        <li>Datos del Contratante: Nombre, R.F.C., Domicilio Completo, Teléfono y Correo Electrónico.</li>
+                        <li>Datos del Vehículo: Marca, Submarca, Tipo, Versión, Modelo, Placas, Número de Serie y Número de Motor.</li>
+                        <li>Contar con licencia de conducir vigente.</li>
+                    </ul>
+                    <br/>
+                    <b>El Seguro Básico Estandarizado de Automóviles, no aplica para: </b>
+                    <ul>
+                        <li>Motocicletas, taxis, camiones de más de 3.5 toneladas, tractocamiones, autobuses, remolques.</li>
+                        <li>Vehículos de Flotilla.</li>
+                        <li>Autos con uso de servicio público, transporte privado, público de carga, público federal de carga o de renta diaria.</li>
+                    </ul>
+                </div>
+            </div>
+            <!--/#contenido-movil-->
+        </div>
+        <div class="col-md-3 shortcode-item">
+            <div class="page-bar">
+                <span class="page-bar-titulo">¿Necesitas más ayuda?</span>
+                <p>Contacta a alguno de nuestros asesores especializado</p>
+                <ul class="page-bar-contacto">
+                    <li><a href="\contacto\contacto.html" id="chatenvivo"><i class="fa fa-comments close_rojo"></i> Chat en vivo</a></li>
+                    <li><a href="\contacto\contacto.html" class="contacto"><i class="fa fa-envelope-o close_rojo"></i> Email</a></li>
+                    <li><i class="icon-telefono"></i> Centro de Contacto <br />800-500-2500</li>
+                </ul>
+                <h3></h3>
+                <ul class="page-bar-opciones">
+                    <ul class="page-bar-opciones">
+                        <li><a href="../seguros-auto/preguntas-frecuentes.html"> Preguntas Frecuentes</a></li>
+                        <li><a href="../seguros-auto/asistencia-inmediata.html"> ¿Qué hacer en caso de siniestro?</a></li>
+                        <li><a href="../seguros-auto/inspeccion-vehicular.html"> Inspección Vehicular</a></li>
+                        <li><a href="../atencion-clientes/atencion-no-siniestro.html"> Aclaraciones y quejas</a></li>
+                        <li><a href="../seguros-auto/recomendaciones-basicasSBE.html"> Recomendaciones básicas</a></li>
+                        <li><a href="../seguros-auto/catalogo-abreviaturasSBE.html"> Catálogo de abreviaturas</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="new-footer">
+        <script type="text/javascript">
+            $("#new-footer").load("../footer.html");
+        </script>
+    </div>
+</body>
+
+</html>

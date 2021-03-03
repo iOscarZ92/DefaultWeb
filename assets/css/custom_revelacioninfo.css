@@ -1,0 +1,12 @@
+.resultados-busqueda { 
+    display:none; /* block */
+	background-color:#f7f7f7;
+	margin-top:10px;
+	padding:25px;
+}
+
+.table-detalles tbody tr td a{
+	font-size:16px;
+	color:#B01657;
+	white-space:none;
+}

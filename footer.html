@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=11;IE=9;" />
+
+    <link href="/assets/css/footer.css" rel="stylesheet" />
+</head>
+<!--/head-->
+
+<footer>
+    <div class="texto-descripcion">
+        <div class="footer-main">
+            <div class="logo-footer">
+                <img src="/assets/images/logo-seguros-banorte.png" alt="Seguros Banorte">
+                <div>
+                    <span>Siguenos</span>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="secciones-footer row">
+                <div class="seccion col-md-4">
+                    <span class="titulo-seccion texto-titulo">Acerca de Seguros Banorte</span>
+                    <a href="/acerca/seguros-banorte.html">Seguros Banorte</a>
+                    <a href="/atencion-clientes/asistencia-inmediata.html">Atención a clientes</a>
+                    <a href="/BolsaTrabajo/NominaWeb.aspx" target="_blank">Trabaja con nosotros</a>
+                    <a href="/info/glosario-banorte.html">Glosario</a>
+                    <a href="/info/mapa-sitio.html">Mapa de Sitio</a>
+                    <a href="/info/manual-procedimiento.html">Manual de Procedimientos</a>
+                </div>
+                <div class="seccion col-md-4">
+                    <span class="titulo-seccion texto-titulo">Seguros Banorte te informa</span>
+                    <a href="/aviso-privacidad/aviso-privacidad-seguros.html">Aviso de privacidad</a>
+                    <a href="/info/terminos-legales.html">Términos legales</a>
+                    <a href="/RevelacionInfo/financieros-banorte.html" target="_blank">Estados Financieros</a>
+                    <a href="/Buro/BuroEntidadesFinancieras.html">Buró de Entidades Financieras</a>
+                    <a href="/atencion-clientes/contacto-condusef.html">Contacto CONDUSEF</a>
+                    <a href="/atencion-clientes/contacto-UNE.html">Contacto UNE</a>
+                </div>
+                <div class="seccion col-md-4">
+                    <span class="titulo-seccion texto-titulo">Sitios Corporativos</span>
+                    <a href="https://www.banorte.com/"> Financiero Banorte</a>
+                    <a href="https://www.pensionesbanorte.com.mx/">Pensiones Banorte</a>
+                    <a href="https://www.xxi-banorte.com/">Afore XXI - Banorte</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle">
+            Carga de facturas electrónicas
+            <a href="https://cfdi.segurosbanorte.com/cfdwebrecepcionplus/asp/Start.aspx" target="_blank">
+                <img src="/assets/images/logo-cfdi.png" alt="CFDI">
+            </a>
+        </div>
+        <div class="footer-down">
+            <div class="row">
+                <div class="col-md-8" id="copyright"></div>
+                <div class="col-md-4 d-flex justify-content-end footer-legal">
+                    <a href="/info/terminos-legales.html" class="termino-legal-a" target="_blank">
+                        <span style="padding-right: 10px;" class="">Términos legales</span>
+                    </a>
+                    <a href="/aviso-privacidad/aviso-privacidad-seguros.html" target="_blank">
+                        <span style="padding-left: 10px;" class="">Aviso de privacidad</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--/#footer-->
+<script src="../assets/js/jquery-3.3.1.js" type="text/javascript"></script>
+<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script src="../assets/js/jquery.isotope.min.js" type="text/javascript"></script>
+<script src="../assets/js/main.js" type="text/javascript"></script>
+<script src="../assets/js/wow.min.js" type="text/javascript"></script>
+<script src="../assets/js/accordion.js" type="text/javascript"></script>
+<script src="../assets/js/jquery.bxslider.js" type="text/javascript"></script>
+<script src="../assets/js/custom-menu.js" type="text/javascript"></script>
+<script src="../assets/js/jquery.mobile.custom.js" type="text/javascript"></script>
+<script src="../assets/js/touchSwipe.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    (function() {
+
+        var rutaAssets = "assets/js";
+        var rutaJs = "js/";
+    })();
+
+    $(document).ready(function() {
+
+        $(".carousel").swipe({
+
+            swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+                if (direction == 'left') $(this).carousel('next');
+                if (direction == 'right') $(this).carousel('prev');
+
+            },
+            allowPageScroll: "vertical"
+
+        });
+
+
+        $('.menuCotizadores').click(function() {
+            $("#menuCotizadoresItems").css('z-index', 99997);
+            var navPosition = $(this).attr('data-position');
+            var navPos = '#menuCotiza div.' + navPosition + '';
+            if ($(navPos).hasClass('open')) {
+                $('#menuCotiza div').removeClass('open');
+                return false;
+            }
+            $(navPos).addClass('open');
+            return false;
+        });
+
+        $(document).click(function() {
+            $('#menuCotiza div').removeClass('open');
+            setTimeout(function() {
+                $("#menuCotizadoresItems").css('z-index', 1);
+            }, 700);
+        });
+    });
+</script>
+<script>
+    document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear() + " Grupo Financiero Banorte, todos los derechos reservados"))
+</script>
+<!--empresasBanorte-->
+<!-- Analytics -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23249775-5']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+</html>

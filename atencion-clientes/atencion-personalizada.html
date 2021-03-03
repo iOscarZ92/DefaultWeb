@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <title>Untitled Document</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/seguros.css" />
+    <script type="text/javascript" src="../assets/js/jquery-1.6.3.min.js"></script>
+    <script>
+        var ETNIA = ETNIA || {};
+        ETNIA.getQParam = function ($param) {
+            function getQueryParamValue(param) {
+                var doc = document;
+                var paramValue = "";
+                var q = doc.location.search || doc.location.hash;
+                if (param == null) {
+                    return q;
+                }
+                if (q) {
+                    var pairs = q.substring(1).split("&");
+                    for (var i = 0; i < pairs.length; i++) {
+                        if (pairs[i].substring(0, pairs[i].indexOf("=")) == param) {
+                            paramValue = pairs[i].substring((pairs[i].indexOf("=") + 1));
+                            paramValue = sanitizeParam(paramValue);
+                        }
+                    }
+                }
+                return paramValue;
+            }
+            var sanitizeParam = function (paramValue) {
+                var re = /[(<>"'&]/g;
+                return paramValue.replace(re, function (m) { return replacechar(m) });
+            }
+            function replacechar(match) {
+                if (match == "<")
+                    return "&lt;"
+                else if (match == ">")
+                    return "&gt;"
+                else if (match == "\"")
+                    return "&quot;"
+                else if (match == "'")
+                    return "&#039;"
+                else if (match == "&")
+                    return "&amp;"
+            }
+            return getQueryParamValue($param);
+        }
+
+        function tabsMenu() {
+            $(".tab_chat").hide();
+            $("ul.chatTabs li:first").addClass("active").show();
+            $(".tab_chat:first").show();
+            $("ul.chatTabs li").click(function () {
+                jQuery('.error').css('display', 'none');
+                $("ul.chatTabs li").removeClass("active");
+                $(this).addClass("active");
+                $(".tab_chat").hide();
+                var activeTab = $(this).find("a").attr("href");
+                $(activeTab).fadeIn();
+                return false;
+            });
+            $("ul.tabs li:eq(" + ETNIA.getQParam('tab') + ")").click();
+        }
+        $(document).ready(function () {
+            tabsMenu();
+        });
+    </script>
+</head>
+<body style="background: #E4E4E6">
+    <div id="chatIntTabs">
+        <ul class="chatTabs">
+            <li class="active"><a href="#tab1">Chat con un ejecutivo</a></li>
+            <li><a href="#tab2">Envíanos un e-mail</a></li>
+        </ul>
+    </div>
+    <div id="tabsChatContent">
+        <br />
+        <div id="tab1" class="tab_chat">
+            <div class="lightContent">
+                <img src="../assets/images/img/topChat.png" width="362" height="64" />
+                <div class="lightFormContent">
+                    <form action="" method="post">
+                    <div class="halfForm">
+                        <label class="requiredChat" for="txtName">
+                            Nombre completo</label>
+                        <input class="txt" type="text" name="name" id="name" />
+                    </div>
+                    <div class="halfForm">
+                        <label class="requiredChat" for="txtName">
+                            Correo electrónico</label>
+                        <input class="txt" id="email" type="text" value="@" name="email" />
+                    </div>
+                    <div class="clear">
+                    </div>
+                    <div class="halfForm">
+                        <div class="halfForm">
+                            <label class="requiredChat" for="txtName">
+                                Teléfono</label>
+                            <input class="txt" id="telephone" type="text" name="telephone" />
+                        </div>
+                    </div>
+                    <div class="halfForm radioBtn">
+                        <label for="txtName" style="width: 170px;">
+                            ¿Eres cliente de Seguros Banorte - Generali?</label><br />
+                        <input type="radio" id="txtCliente_0" style="width: 15px;" checked="CHECKED" value="Si"
+                            name="isClient" />Si
+                        <input type="radio" value="No" name="isClient" id="txtCliente_1" style="width: 15px;" />
+                        No
+                    </div>
+                    <div class="clear">
+                    </div>
+                    <div class="halfForm">
+                        <label class="requiredChat" for="txtName">
+                            Clasifica tu comentario</label>
+                        <input type="hidden" value="true" name="typeQuestionOldValue" />
+                        <select class="txt" id="typeQuestion" name="typeQuestion">
+                            <option value="-- SELECCIONAR --" selected="selected">-- SELECCIONAR --</option>
+                            <option value="Informacion de tramites">Información de trámites</option>
+                            <option value="Felicitaciones">Felicitaciones</option>
+                            <option value="Quejas">Quejas</option>
+                            <option value="Sugerencias">Sugerencias</option>
+                            <option value="Promociones y Publicidad">Promociones y Publicidad</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="halfForm">
+                        <label class="requiredChat" for="txtName">
+                            Tipo de servicio</label>
+                        <input type="hidden" value="true" name="productIdOldValue" />
+                        <select class="txt" id="productId" name="productId" onclick="return productId_onclick()">
+                            <!--TIPO DE SERVICIO-->
+                            <option value="-- SELECCIONAR --" selected="selected">-- SELECCIONAR --</option>
+                            <option value="Informacion Retiro Total">Informacíon Retiro Total</option>
+                            <option value="Informacion Retiro Desempleo">Informacíon Retiro Desempleo</option>
+                            <option value="Informacion Retiro Matrimonio">Informacíon Retiro Matrimonio</option>
+                            <option value="Informacion Retiro Aportaciones Voluntarias">Informacíon Retiro Aportaciones
+                                Voluntarias</option>
+                            <option value="Requisitos cambios en datos generales">Requisitos cambios en datos generales</option>
+                            <option value="tramite traspaso SAR IMSS">tramite traspaso SAR IMSS</option>
+                            <option value="tramite traspaso SAR ISSSTE">tramite traspaso SAR ISSSTE</option>
+                            <option value="tramite de unificación de NSS">tramite de unificación de NSS</option>
+                            <option value="tramite de separación de cuentas">tramite de separación de cuentas</option>
+                            <option value="Informacion para registrarme en Afore Banorte Generali">Información para
+                                registrarme en Afore Banorte Generali</option>
+                            <option value="Informacion para traspasarme a Afore Banorte Generali">Información para
+                                traspasarme a Afore Banorte Generali</option>
+                            <option value="Informacion de Rendimientos y Comisiones">Información de Rendimientos
+                                y Comisiones</option>
+                            <option value="Informacion para cambios de Orden de selección SIEFORE">Información para
+                                cambios de Orden de selección SIEFORE</option>
+                            <option value="Resumen de estado de cuenta">Resumen de estado de cuenta</option>
+                            <option value="Consulta de saldos">Consulta de saldos</option>
+                            <option value="Mal servicio">Mal servicio</option>
+                            <option value="No recibo estados de cuenta">No recibo estados de cuenta</option>
+                            <option value="No puedo ingresara la pagina web de BGA">No puedo ingresara la pagina
+                                web de Banorte Generali</option>
+                            <option value="Beneficios AFORE BANORTE GENERALI">Beneficios AFORE BANORTE GENERALI</option>
+                            <option value="Beneficios fiscales aportaciones voluntarias">Beneficios fiscales aportaciones
+                                voluntarias</option>
+                            <option value="Ubicaciones oficinas de atencion personalizada">Ubicaciones oficinas
+                                de atención personalizada</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <label for="txtName">
+                        Escribe tus comentarios</label>
+                    <textarea id="comment" name="comment" cols="1" rows="1" style="width: 100%; height: 80px;"></textarea>
+                    <br />
+                    <br>
+                    <div style="text-align: center; width: 205px; margin-left: 70px;">
+                        <input class="inputSubmitChat" value="Iniciar Sesión" type="submit" onclick="javascript:submitform();"
+                            type="button" style="float: left;" />
+                        &nbsp; &nbsp;
+                        <input class="inputSubmitChat" value="Borrar campos" type="reset" name="Reset" style="float: right;" />
+                    </div>
+                    <div class="valid">
+                        Datos obligatorios para enviar la solicitud</div>
+                    </form>
+                    <div class="horarioChat">
+                        Horario de atención<br />
+                        Lunes a Viernes de 9:00 a.m. a 08:00 p.m.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tab2" class="tab_chat">
+            <div class="lightContent">
+                <img src="../assets/images/img/topMail.jpg" width="362" height="64" />
+                <div class="lightFormContent">
+                    <form action="" method="post">
+                    <div class="halfForm">
+                        <label class="requiredChat" for="txtName">
+                            Nombre completo</label>
+                        <input class="txt" type="text" name="name" id="name" />
+                    </div>
+                    <div class="halfForm">
+                        <label class="requiredChat" for="txtName">
+                            Correo electrónico</label>
+                        <input class="txt" id="email" type="text" value="@" name="email" />
+                    </div>
+                    <div class="clear">
+                    </div>
+                    <div class="halfForm">
+                        <div class="halfForm">
+                            <label class="requiredChat" for="txtName">
+                                Teléfono</label>
+                            <input class="txt" id="telephone" type="text" name="telephone" />
+                        </div>
+                    </div>
+                    <div class="halfForm radioBtn">
+                        <label for="txtName" style="width: 170px;">
+                            ¿Eres cliente de Seguros Banorte - Generali?</label><br />
+                        <input type="radio" id="txtCliente_0" style="width: 15px;" checked="CHECKED" value="Si"
+                            name="isClient" />Si
+                        <input type="radio" value="No" name="isClient" id="txtCliente_1" style="width: 15px;" />
+                        No
+                    </div>
+                    <div class="clear">
+                    </div>
+                    <div class="halfForm">
+                        <label class="requiredChat" for="txtName">
+                            Clasifica tu comentario</label>
+                        <input type="hidden" value="true" name="typeQuestionOldValue" />
+                        <select class="txt" id="typeQuestion" name="typeQuestion">
+                            <option value="-- SELECCIONAR --" selected="selected">-- SELECCIONAR --</option>
+                            <option value="Informacion de tramites">Información de trámites</option>
+                            <option value="Felicitaciones">Felicitaciones</option>
+                            <option value="Quejas">Quejas</option>
+                            <option value="Sugerencias">Sugerencias</option>
+                            <option value="Promociones y Publicidad">Promociones y Publicidad</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="halfForm">
+                        <label class="requiredChat" for="txtName">
+                            Tipo de servicio</label>
+                        <input type="hidden" value="true" name="productIdOldValue" />
+                        <select class="txt" id="productId" name="productId" onclick="return productId_onclick()">
+                            <!--TIPO DE SERVICIO-->
+                            <option value="-- SELECCIONAR --" selected="selected">-- SELECCIONAR --</option>
+                            <option value="Informacion Retiro Total">Informacíon Retiro Total</option>
+                            <option value="Informacion Retiro Desempleo">Informacíon Retiro Desempleo</option>
+                            <option value="Informacion Retiro Matrimonio">Informacíon Retiro Matrimonio</option>
+                            <option value="Informacion Retiro Aportaciones Voluntarias">Informacíon Retiro Aportaciones
+                                Voluntarias</option>
+                            <option value="Requisitos cambios en datos generales">Requisitos cambios en datos generales</option>
+                            <option value="tramite traspaso SAR IMSS">tramite traspaso SAR IMSS</option>
+                            <option value="tramite traspaso SAR ISSSTE">tramite traspaso SAR ISSSTE</option>
+                            <option value="tramite de unificación de NSS">tramite de unificación de NSS</option>
+                            <option value="tramite de separación de cuentas">tramite de separación de cuentas</option>
+                            <option value="Informacion para registrarme en Afore Banorte Generali">Información para
+                                registrarme en Afore Banorte Generali</option>
+                            <option value="Informacion para traspasarme a Afore Banorte Generali">Información para
+                                traspasarme a Afore Banorte Generali</option>
+                            <option value="Informacion de Rendimientos y Comisiones">Información de Rendimientos
+                                y Comisiones</option>
+                            <option value="Informacion para cambios de Orden de selección SIEFORE">Información para
+                                cambios de Orden de selección SIEFORE</option>
+                            <option value="Resumen de estado de cuenta">Resumen de estado de cuenta</option>
+                            <option value="Consulta de saldos">Consulta de saldos</option>
+                            <option value="Mal servicio">Mal servicio</option>
+                            <option value="No recibo estados de cuenta">No recibo estados de cuenta</option>
+                            <option value="No puedo ingresara la pagina web de BGA">No puedo ingresara la pagina
+                                web de Banorte Generali</option>
+                            <option value="Beneficios AFORE BANORTE GENERALI">Beneficios AFORE BANORTE GENERALI</option>
+                            <option value="Beneficios fiscales aportaciones voluntarias">Beneficios fiscales aportaciones
+                                voluntarias</option>
+                            <option value="Ubicaciones oficinas de atencion personalizada">Ubicaciones oficinas
+                                de atención personalizada</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="clear">
+                    </div>
+                    <label for="txtName">
+                        Escribe tus comentarios</label>
+                    <textarea id="comment" name="comment" cols="1" rows="1" style="width: 100%; height: 80px;"></textarea>
+                    <br />
+                    <br>
+                    <div style="text-align: center; width: 205px; margin-left: 70px;">
+                        <input class="inputSubmitChat" value="Enviar" type="submit" onclick="javascript:submitform();"
+                            type="button" style="float: left;" />
+                        &nbsp; &nbsp;
+                        <input class="inputSubmitChat" value="Borrar campos" type="reset" name="Reset" style="float: right;" />
+                    </div>
+                    <div class="clear">
+                    </div>
+                    <div class="valid">
+                        Datos obligatorios para enviar la solicitud</div>
+                    </form>
+                    <div class="horarioChat">
+                        Horario de atención<br />
+                        Lunes a Viernes de 9:00 a.m. a 08:00 p.m.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!--empresasBanorte-->
+    <!-- Analytics -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-23249775-5']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</body>
+</html>

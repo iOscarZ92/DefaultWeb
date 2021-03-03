@@ -1,0 +1,71 @@
+.accordion, .accordion * {
+	-webkit-box-sizing:border-box; 
+	-moz-box-sizing:border-box; 
+	box-sizing:border-box;
+}
+
+.accordion {
+	overflow:hidden;
+	background:#f7f7f7;
+}
+
+.accordion-section-title {
+	width:100%;
+	padding:15px;
+	display:inline-block;
+	border-bottom:1px solid #c2c2c2;
+	background:#e1e1e1;
+	transition:all linear 0.15s;
+	font-size:14px;
+	color:#353131;
+	text-align:center;
+}
+
+.a-mautos {
+
+	background:#ff6721 !important;
+	color: #fff !important;
+}
+
+.a-hogar {
+
+	background:#ea002d !important;
+	color: #fff !important;
+}
+
+
+.accordion-section-title-hogar {
+	width:100%;
+	padding:15px;
+	display:inline-block;
+	border-bottom:1px solid #ea002d;
+	background:#e1e1e1;
+	transition:all linear 0.15s;
+	font-size:14px;
+	color:#353131;
+	text-align:center;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+	background: #e1e1e1;
+	text-decoration:none;
+}
+
+.accordion-section:last-child .accordion-section-title {
+	border-bottom:none;
+}
+
+.accordion-section-content {
+	padding:15px;
+	display:none;
+}
+
+.a-mautos-content {
+	background-color: #ffffff !important;
+	border: 1px solid #e7e7e7;
+}
+
+.a-divider {
+	border-bottom: 1px solid #e7e7e7;
+	height: 20px;
+}

@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=11;IE=9;" />
+    <meta content="" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="En Seguros Banorte te ofrecemos una amplia variedad de productos, todos orientados a que disfrutes tranquilo de la vida. Contamos con seguros para Auto, Vida y Familia, Gastos Médicos, Hogar y Empresas.
+										  Además, te proporcionamos servicios relacionados con esos productos, para dar protección adicional a tu persona, familia y propiedades." />
+    <meta name="keywords" content="seguros de autos, seguros para autos ,cotizar seguro de auto, seguro auto, que tan seguro es tu auto, cotizar seguro auto, comparador de seguros de auto, cual es el mejor seguro de autos, mejor seguro de auto, comparar seguros auto, autos mas seguros en mexico, seguros para autos precios, cual es el mejor seguro para autos, cuanto cuesta un seguro de auto, cotizador de seguros para autos, cotizar seguro para auto"
+    />
+    <meta name="author" content="Banorte" />
+    <title>Banorte | Seguros</title>
+    <!-- core CSS -->
+
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../assets/css/animate.min.css" rel="stylesheet" />
+    <link href="../assets/css/prettyPhoto.css" rel="stylesheet" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/seguros-style.css" rel="stylesheet" />
+    <link href="../assets/css/responsive.css" rel="stylesheet" />
+    <link href="../assets/css/accordion.css" rel="stylesheet" />
+    <link href="../assets/css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+
+
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+
+    <link rel="shortcut icon" href="../assets/images/ico/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="../assets/images/ico/apple-touch-icon-57-precomposed.png" />
+    <script src="../assets/js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="../assets/js/config_cotizadores.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function ChangeDiv() {
+            document.getElementById("educativos").style.display = "block";
+            document.getElementById("cotizador_autos").style.display = "none";
+            document.getElementById("Inicial").style.display = "none";
+            document.getElementById("content").style.display = "none";
+            document.getElementById("sub-bottom-princ").style.display = "none";
+            document.getElementById("main-slider").style.display = "none";
+
+        }
+
+        function ChangeMouse() {
+            document.body.style.cursor = 'pointer';
+        }
+
+        function ChangeDivAuto() {
+            document.getElementById("cotizador_autos").style.display = "block";
+            document.getElementById("educativos").style.display = "none";
+            document.getElementById("Inicial").style.display = "none";
+            document.getElementById("content").style.display = "none";
+            document.getElementById("sub-bottom-princ").style.display = "none";
+            document.getElementById("main-slider").style.display = "none";
+            document.getElementById("footer-info").style.backgroundColor = '#e1e1e1';
+        }
+
+        window.onload = function() {
+            cargaCotizador("link-auto-i", "auto");
+        }
+    </script>
+
+</head>
+<!--/head-->
+
+<body id="inicio" class="homepage">
+    <div id="new-header">
+        <script type="text/javascript">
+            $("#new-header").load("header.html");
+        </script>
+    </div>
+    <!-- cotiza en línea -->
+    <div class="menuCotizadores" style="position:relative; z-index:178">
+        <div class="menuCot__wrapper pull-right">
+            <a class="menuCotizadores menuCot__wrapper--link" data-position="right" href="#">
+                <img id="imagenMenuCotizador" alt="" src="../assets/images/menuCotizadores.jpg">
+            </a>
+        </div>
+    </div>
+    <div id="menuCotizadoresItems">
+        <div class="menuCot__wrapper pull-right">
+            <div id="menuCotiza">
+                <div class="right menuCot__wrapper--list">
+                    <ul>
+                        <li><a id="link-auto-i" href="" target="_blank" rel="noopener" onmouseover="ChangeMouse()" onmousemove="ChangeMouse()">SEGURO DE AUTO </a>
+                        </li>
+                        <li>
+                            <a id="vermas" target="_blank" rel="noopener" href="../cotizador/cotizadores.html">VER M&Aacute;S &nbsp;<div id="points2" style="position:absolute; width:100%; height:100%;"> <img id="point"></div></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/cotizaenlinea-->
+
+    <!-- STAGE INICIAL -->
+    <!-- <section id="Inicial" class="inicio-slide" >-->
+    <section id="Inicial">
+        <div onclick='window.location.href="https://www.banorte.com/wps/portal/banorte/Home/banorte-sale/banorte-sale-promocion-seguros"' style="background-image:url(../assets/images/Mailing_Seguros_1920x500.png); height:350px; width:1355px; background-position: center;	background-size: cover;">
+            <div class="row">
+                <div class="col-sm-7 map-content">
+                    <h1 class="animation animated-item-1"> <br /><br /></h1>
+                    <h2 class="animation animated-item-2"></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--<section id="Inicial" class="inicio-slide" style="background-image:url(../assets/images/home1.jpg); z-index:-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 map-content">
+                        <h1 class="animation animated-item-1">Seguros Banorte</h1>
+                        <h2 class="animation animated-item-2">La seguridad de vivir tranquilo tú y tu familia</h2>
+                        <!-- <a class="btn btn-primary" href="../cotizador/cotizadores.html">COTIZA EN LÍNEA</a>-->
+    <!--           </div>
+                </div>
+            </div>
+        </section>
+        -->
+
+    <!-- iFRAME -->
+
+    <iframe width="100%" height="100%" id="educativos" style="display:none; border:0;background:#e1e1e1" src="SEB/CotizadorEducativo1.aspx?Perfil=A&NumeroEmpl=0&USU_NOMBRE=&USU_PATERNO=&USU_MATERNO=&CAP_PAGO=0&NUM_OFICINA=198&Anon=true&urlintranet=/"></iframe>
+
+    <object id="cotizador_autos" style="display:none; border:0" data="https://www.espaciobanorte.com/cotizadores/cotizador/wizardauto/indexEnv.xhtml?usuarioActual=12713&oficinaActual=4027" width="100%" height="490px">
+            <embed src="https://www.espaciobanorte.com/cotizadores/cotizador/wizardauto/indexEnv.xhtml?usuarioActual=12713&oficinaActual=4027" width="100%" height="490px"> </embed>
+            Error: Embedded data could not be displayed.
+        </object>
+    <!--<iframe width="100%" height="360px" id="cotizador_autos"  style="display:none; border:0" src="http://15.192.40.59:7401/cotizadores/cotizador/wizardauto/indexEnv.xhtml?usuarioActual=12713&oficinaActual=4027"></iframe>-->
+    <!-- ATENCION A CLIENTES -->
+    <section id="content" style="background-image: url(../assets/images/inicio-tab-bg.jpg); background-position: bottom; z-index:2">
+        <div class="container">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="a-clientes">
+                    <div id="titulo-tab">ATENCIÓN A CLIENTES</div>
+                    <ul class="lista-links">
+                        <li><a class="ofiventas" href="#"><span>Oficinas de ventas</span><i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a class="siniestros" href="#"><span>Atención a siniestros</span><i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="atencion-clientes/atencion-no-siniestro.html"><span>Aclaraciones y quejas</span><i class="fa fa-angle-right pull-right"></i></a></li>
+                    </ul>
+                </div>
+                <div class="basico-estandarizado">
+                    <div id="titulo-basico-estand">BÁSICO ESTANDARIZADO</div>
+                    <ul class="lista-links">
+                        <li><a class="linkbasicoestand" href="seguros-auto/seguro-basicoestandarizado.html"><span>Seguro Básico Estandarizado Autos</span><i class="fa fa-angle-right pull-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="asistencia">
+                    <div class="asistencia-title">
+                        <h3 class="texto-rojo">Asistencia<br>inmediata</h3>
+                    </div>
+                    <p>Nuestros ejecutivos de Atención a Siniestros se encuentran disponibles las 24 horas los 365 días del año.</p>
+                    <div class="asistencia-tels">
+                        <div class="tels-big">
+                            <p>800</p>
+                        </div>
+                        <div class="tels-small">
+                            <ul>
+                                <li>500 15 00 <span>Siniestro Autos</span></li>
+                                <li>500 25 00 <span>Siniestro Vida</span></li>
+                                <li>002 88 88 <span>Siniestro Hogar</span></li>
+                                <li>201 67 64 <span>Siniestro Gastos Médicos</span></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.container-->
+    </section>
+    <!--/#content-->
+
+    <div id="sub-bottom-princ">
+        <!--<div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 borde-menu-left borde-menu-right">
+                    <div class="widget">
+                        <h3><a href="seguros-auto/preguntas-frecuentes.html">PREGUNTAS FRECUENTES</a></h3>
+                    </div>
+                </div>
+                <!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6 borde-menu-right">
+                    <div class="widget">
+                        <h3><a href="seguros-auto/asistencia-inmediata.html">¿QUÉ HACER EN CASO DE SINIESTRO?</a></h3>
+                    </div>
+                </div>
+                <!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6 borde-menu-right">
+                    <div class="widget">
+                        <h3><a href="seguros-auto/inspeccion-vehicular.html">INSPECCIÓN <br /> VEHICULAR</a></h3>
+                    </div>
+                </div>
+                <!--/.col-md-3-->
+                <div class="col-md-3 col-sm-6 borde-menu-right">
+                    <div class="widget">
+                        <h3><a href="../cotizador/cotizadores.html">CONTRATACIÓN EN LÍNEA</a></h3>
+                        <p></p>
+                    </div>
+                </div>
+                <!--/.col-md-3-->
+            </div>
+        </div>
+    </div>
+    <!--/#bottom-->
+
+    <div class="modal fade" id="notificacion-exito" tabidex="=-1" role="dialog" aria-labelledby="NotificacionLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h2 class="texto-guinda">Mensaje enviado exitosamente<strong></strong></h2>
+                    <p>En breve un ejecutivo se pondrá en contacto</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="closeModal();">ACEPTAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="notificacion-error" tabidex="=-1" role="dialog" aria-labelledby="NotificacionLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h2 class="texto-guinda">No fue posible enviar su mensaje<strong></strong></h2>
+                    <p>Por favor inténtelo de nuevo</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="closeModal();">ACEPTAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="main-slider" class="no-margin">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+                <li data-target="#myCarousel" data-slide-to="7"></li>
+            </ol>
+
+
+
+
+            <div class="carousel-inner">
+                <div id="covid" class="item  active" onclick="location.href='https://www.segurosbanorte.com.mx/contingencia/contingencia.html';" style="background-image: url(../assets/images/Banner_Reclamaciones_1280x492_4.jpg); cursor:pointer;">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-7 map-content">
+                                <div class="carousel-content">
+                                    <a href="app/App.html"><img src="" class="img-responsive"></h2>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--/.item-->
+
+                <div id="PT" class="item" onclick="location.href='https://www.segurosbanorte.com.mx/gastos-medicos/plan-total.html';" style="background-image: url(../assets/images/Banner2_COVID_1280x492_4.jpg); cursor:pointer;">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-7 map-content">
+                                <div class="carousel-content">
+                                    <a href="app/App.html"><img src="" class="img-responsive"></h2>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--/.item-->
+
+                <div id="app" class="item" onclick="location.href='app/App.html';" style="background-image: url(../assets/images/Banorte-App-Seguros-1280x492.jpg); cursor:pointer;">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-7 map-content">
+                                <div class="carousel-content">
+                                    <a href="app/App.html"><img src="" class="img-responsive"></h2>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--/.item-->
+
+                <!--<div class="item" onclick="location.href='https://www.banorte.com/wps/portal/banorte/Home/seguros/seguro-auto/auto/!ut/p/a1/lZDLDoIwEEW_xS_oUGgpy6ZUqK-CWMVuDCtDoujC-P1W4kaIVe9uknNyJxdZVCPbNff22NzaS9ecnrelhwwHLA8FzLUsKXCxLuVWTQOpqQP2DoAP4TDwCxM6XxtRkBRvaPzyPYCnf1mRoc9STYDjUkpIWKgY_c0XGc-jeAGgowwDZ6tZVJEEg6J_9o-BL_vtkO0R3wc94Jv4vWS8wfVsXGpoFZ88AMNYfqI!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/';" style="background-image: url(../assets/images/Banorte-Seguro-de-Auto-1280x492.jpg); cursor:pointer;">
+                        <div class="container">
+                            <div class="row slide-margin">
+                                <div class="col-sm-7 map-content">
+                                    <div class="carousel-content">
+                                        <a href="pyme/auto-flotillas.html"><img src="" class="img-responsive"></h2></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div><!--/.item-->
+
+                <div id="seguro_obligatorio" class="item" onclick="location.href='https://www.segurosbanorte.com.mx/seguros-auto/seguro-auto.html';" style="background-image: url(../assets/images/Seguro_auto_1280x492.jpg); cursor:pointer;">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-7">
+                                <div class="carousel-content">
+                                    <a href="seguros-auto/seguro-auto.html"><img src="" class="img-responsive"></h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.item-->
+                <div class="item" onclick="location.href='https://segurosbanorte.com/seguros-transforma/seguros-transforma.html';" style="background-image: url(../assets/images/Banorte-Gastos-Medicos-Mayores-1280x492-V2.jpg); cursor:pointer;">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-7">
+                                <div class="carousel-content">
+                                    <a href="gastos-medicos/medico-total.html"><img src="" class="img-responsive"></h2>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--/.item-->
+                <div class="item" onclick="location.href='https://www.segurosbanorte.com.mx/seguros-hogar/seguro-hogar.html';" style="background-image: url(../assets/images/Seguro_HOGAR_1280x492.jpg); cursor:pointer;">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-7">
+                                <div class="carousel-content">
+                                    <a href="seguros-hogar/seguro-hogar.html"><img src="" class="img-responsive"></h2>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--/.item-->
+                <div class="item" onclick="location.href='https://www.segurosbanorte.com.mx/seguros-vida/seguro-vida-individual.html';" style="background-image: url(../assets/images/Seguro_vida_1280x492.jpg); cursor:pointer;">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-7">
+                                <div class="carousel-content">
+                                    <a href="seguros-vida/seguro-vida-individual.html"><img src="" class="img-responsive"></h2>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--/.item-->
+
+                <div class="item" onclick="location.href='https://www.banorte.com/wps/portal/banorte/Home/cuentas-y-tarjetas/tarjetas-de-credito';" style="background-image: url(../assets/images/Banner_Seguros_TDC_1280x492_2.jpg); cursor:pointer;">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-7 map-content">
+                                <div class="carousel-content">
+                                    <a href="https://www.banorte.com/wps/portal/banorte/Home/cuentas-y-tarjetas/tarjetas-de-credito"><img src="" class="img-responsive"></h2>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--/.item-->
+
+
+            </div>
+            <!--/.carousel-inner-->
+        </div>
+        <!--/.carousel-->
+        <a class="left hidden-xs carousel-control" href="#myCarousel" data-slide="prev">
+            <i><img src="../assets/images/flecha-izq.png"/></i>
+        </a>
+        <a class="right hidden-xs carousel-control" href="#myCarousel" data-slide="next">
+            <i><img src="../assets/images/flecha-der.png"/></i>
+        </a>
+    </section>
+    <!--/#main-slider-->
+    <!--<script src="../assets/js/jquery.js"></script>-->
+    <script src="../assets/js/jquery.prettyPhoto.js"></script>
+    <script src="../assets/js/jquery.isotope.min.js"></script>
+    <!--<script src="../assets/js/main.js"></script>-->
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/accordion.js"></script>
+    <script src="../assets/js/jquery.bxslider.js"></script>
+
+    <div id="new-footer">
+        <script type="text/javascript">
+            $("#new-footer").load("../footer.html");
+        </script>
+    </div>
+
+    <!--empresasBanorte-->
+    <!-- Analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-23249775-5']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+
+</html>

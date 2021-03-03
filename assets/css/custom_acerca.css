@@ -1,0 +1,344 @@
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto 60px;
+	padding: 0;
+	z-index:0;
+	*zoom: 1;
+}
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 25%;
+	margin-top: -16px;
+	outline: 0;
+	width: 50px;
+	height: 88px;
+	text-indent: -9999px;
+	z-index: 9999;
+}
+.btn {
+	height:35px;
+	font-size:16px;
+	padding: 8px 30px;
+	border-radius: 2px;
+    margin-top: 10px; 
+}
+ul.menu-top-content li a {
+  font-family:'Gotham Book', sans-serif;
+  display: block;
+  font-size:17px;
+  color: #fff; 
+  padding:0px 15px;
+  line-height: 64px;
+  text-align: center;  
+  cursor: default;
+}
+.inicio-slide h1 {
+	font-family:'Gotham Light', sans-serif;
+	font-size:77px !important;
+	line-height:72px;
+	font-weight:normal;	
+}
+.bx-wrapper .bx-viewport{
+  height: 165px !important; 
+}
+.bx-wrapper .bx-prev{
+  left: -50px !important;
+}
+.bx-wrapper .bx-next{
+  right: -40px !important;
+}
+.bx-wrapper .bx-viewport .slide label{
+  display: block;
+}
+.panels-e{
+  display: none;
+  padding-top: 40px;
+  background-color:#e2e2e2;
+  padding-bottom: 40px;
+  position:relative;
+}
+#accordion-mapa .panel{
+  /*background-color: #eb0029; */
+  border:0 none;
+  box-shadow:none;
+  -moz-border-radius: 5px; 
+  -ms-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border-radius: 5px; 
+  margin-bottom:20px;
+}
+#accordion-mapa .panel-heading{	
+
+	background: url(../images/arrow_down.svg);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	padding-top:20px;
+	background-position: 260px 15px;
+	height:50px;
+}
+#main-slider .carousel .item {
+
+	opacity: 1;
+ 	-webkit-transition: opacity ease-in-out 500ms;
+	-moz-transition: opacity ease-in-out 500ms;
+	-o-transition: opacity ease-in-out 500ms;
+	transition: opacity ease-in-out 500ms;
+	z-index: 1;
+	margin:20px;
+	border: 6px solid #ffffff;
+	height:400px;
+	background-size:cover !important;
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+#main-slider .carousel .item.active {
+	opacity: 1;
+ 	-webkit-transition: opacity ease-in-out 500ms;
+	-moz-transition: opacity ease-in-out 500ms;
+	-o-transition: opacity ease-in-out 500ms;
+	transition: opacity ease-in-out 500ms;
+	z-index: 1;
+	margin:20px;
+	border: 6px solid #ffffff;
+}
+.minus_negro{
+	background-image:url(../images/menos.svg);
+	background-position: 40% 50%; 
+	background-repeat:no-repeat;
+	width:auto;
+	height:50px;
+}
+.check_verde{
+	background-image:url(../images/check.png);
+	background-position: 50% 50%; 
+	background-repeat:no-repeat;
+	width:auto;
+	height:40px;
+} 
+/*
+select::-ms-expand {
+    display: none;
+}
+
+/*rdy
+select:active::-ms-value {background-color: white; color:#888;}*/
+/*select:focus::-ms-value {background-color: white; color:#888;}*/
+/*select:visited::-ms-value {background-color: white; color:#888;}
+rdy*/
+/*
+.ie9 .form-group{ overflow: hidden; }
+.ie9 select.selector{
+  width: 110%;
+  background: url(../images/flecha-select.png) no-repeat 90% 0 #FFF;
+}*/
+.vinietas-docs-oficiales li{
+	list-style:none;
+	color:#bd1352;
+	border-bottom:#e1e3e2 solid 1px;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:30px;
+	background: url(../images/descarga.svg) left center no-repeat;
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: 0px 15px;
+}
+#accordion-mapa .panel-default-mapa>#accordion-mapa.panel-heading,
+#accordion-mapa .panel{
+  /*background-color: #eb0029; */
+  border:0 none;
+  box-shadow:none;
+  -moz-border-radius: 5px; 
+  -ms-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border-radius: 5px; 
+  margin-bottom:20px;
+}
+#accordion-mapa .panel-heading{	
+	background: url(../images/arrow_down.svg);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	padding-top:20px;
+	background-position: 260px 15px;
+	height:50px;
+}
+#accordion-mapa .panel-heading.active .panel-title>a{
+	color:#fff;
+	background: url(../images/arrow_up.svg);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	padding-top:2px;
+}
+.resultados-busqueda { 
+    display:block;	
+	background-color:#f7f7f7;
+	margin-top:10px;
+	padding:25px;
+}
+.icon-telefono{
+	background-image:url(../images/centro-contacto.png);
+	background-size:18px;
+	background-repeat:no-repeat;
+	width:31px;
+	height:30px;
+}
+/*
+.select-seguros {
+  border: 1px solid #ccc;
+  height: 35px;
+  width: 200px;
+  overflow: hidden;
+  background: #fff url(../images/flecha-select.png) no-repeat right;
+}
+
+.table-responsive a {
+	color: #B01657;
+}*/
+
+@media (max-width: 480px) {
+	/*.logotipo {outline:#FF0 solid 2px;}*/
+	 .borde-menu-right{
+		border-bottom: 1px solid #dedede;
+	}
+	.inicio-slide h2{
+		font-size:21px;
+	}
+	
+	#titulo-tab{
+		font-size:20px;
+	}
+	.asistencia-title {
+		padding-left:100px;
+		background-size:80px;
+		height:80px;
+	}
+	.asistencia-title h3{
+		font-size:22px;
+		line-height:22px;
+	}
+	.asistencia p {
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.asistencia .tels-big p{		
+		font-size: 35px;
+		padding-right:0px;	
+		margin-top:0px;	
+		line-height:40px;
+	}
+	.widget h3{
+		/*height:54px;*/
+	}	
+	.tels-big {
+		height:40px;
+	}
+	.tels-small ul {
+		padding-top:10px;
+	}
+	#inicio .inicio-slide h1 {
+		font-size:50px;
+		line-height:50px;
+	}
+	#inicio .inicio-slide h2 {
+		font-size:21px;
+		line-height:26px;
+	}
+	#legales {
+		margin-top:20px;
+	}
+	#legales span{
+		display:block;
+		margin-top:20px;
+	}
+	.nav-tabs>li {
+		width:100%;
+	}
+	
+	#sub-bottom ul {
+		margin-top:0px;
+		padding-top:0px;
+	}
+	.inicio-area-2nivel .btn-cotizar,
+	.inicio-area-2nivel .btn-contratar{
+		width:175px;
+		padding:8px 0px;
+	}
+
+	.breadcrumb-container{ padding: 10px 0; }
+  .inicio-area{ height: auto; min-height: 380px; }
+  .titulo-detalles{ font-size: 32px; }
+  .resaltado{ font-size: 18px; line-height: 120%; }
+	.logotipo{ width: 250px; padding-top: 23px; }
+  .breadcrumb-container ul li{ line-height: initial; }
+  #lista-botones li{ width: 100%; }
+  #lista-botones li button{ margin: 0 0 10px !important; float: none !important; }
+  .seguro-obligatorio-datos{ margin-bottom: 20px; }
+  .pull-right{ float: none !important;}
+  #sub-bottom, .breadcrumb-container ul li{ height: auto; }
+  .consulta-proveedores-med-2{ padding-left: 0; }
+  .col-sm-6.corrector-15{ padding-left: 15px; }
+  .menuCotizadores{ display: none; }
+  .navbar-collapse.in{ height: 100% !important; padding-bottom: 40px; }
+
+  .inicio-area, .inicio-area-2nivel, #asistencia-page .inicio-area, #datos-generales-page .inicio-area, #mas-vision-page .inicio-area, #perdida-total-a-page .inicio-area-2nivel{ position: relative; }
+  .inicio-area > .container, .inicio-area-2nivel > .container, #asistencia-page .inicio-area > .container, #datos-generales-page .inicio-area > .container, #mas-vision-page .inicio-area > .container, #perdida-total-a-page .inicio-area-2nivel > .container{ z-index: 1; position: relative; }
+  .inicio-area:after, .inicio-area-2nivel:after, #asistencia-page .inicio-area:after, #datos-generales-page .inicio-area:after, #mas-vision-page .inicio-area:after, #perdida-total-a-page .inicio-area-2nivel:after{ position: absolute; height: 100%; width: 100%; background-color: rgba(54,54,54,0.5); content: ''; top: 0; left: 0; }
+}
+/*
+.green-custom-back{
+  background-color: #00B050;
+}*/
+
+
+#destacados {
+	margin-top:-70px;	
+}
+.destacado-btn {
+	height:140px;
+	width:220px;
+	padding:20px 0px 0px 20px;
+	margin-bottom:100px;
+}
+
+#asistencia-page .inicio-area {
+	background-image:url(../images/shutterstock_131281658.jpg);
+}
+/*
+.table-detalles tbody tr td a{
+	font-size:16px;
+	color:#B01657;
+	white-space:pre;
+}
+.table-detalles tbody tr td a:hover{
+	bfont-size:16px;
+	color:black;
+}
+tr.tr_unico{
+    border-bottom: white !important;
+}*/
+
+#menuCotiza div {
+  position: fixed;
+  top: 0;
+  z-index: 199;
+  -webkit-transition: all 0.4s 0.4s;
+  -moz-transition: all 0.4s 0.4s;
+  transition: all 0.4s 0.4s; 
+}
+
+#menuCotiza div.left, #menuCotiza div.right {
+   width: 250px;
+   height: 100%;
+}  
+
+#landing-cotiza .inicio-area {
+    background-image: url(../images/banner-landing-cotizadores.jpg);
+}
+/*
+div .open {
+	 padding-left: 0px!important;
+}*/
+
+
+

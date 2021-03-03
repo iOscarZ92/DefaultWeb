@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<images>
+	<image title="Seguro de Auto" description="Cuenta con una amplia cobertura contra accidentes, protegiéndote a ti y a los que te acompañan." src="/seguros/images/auto.jpg" href="/seguros/seguros-auto/seguro-auto.html" />
+	<image title="Gastos Médicos Mayores" description="Banorte-Generali ve por  tu seguridad poniendo a tu alcance el seguro de Gastos Médicos." src="/seguros/images/gmm.jpg" href="/seguros/gastos-medicos/medico-total.html" />
+	<image title="Seguro de Hogar" description="Banorte-Generali asegura tu hogar contra fenómenos naturales y otros eventos y te brinda asistencia hasta tu hogar." src="/seguros/images/hogar.jpg" href="/seguros/seguros-hogar/seguro-hogar.html" />
+	<image title="Seguro de Vida" description="Banorte-Generali ofrece seguridad a tu familia en caso de siniestro." src="/seguros/images/vida.jpg" href="/seguros/seguros-vida/seguro-vida-familia.html" />
+	<image title="Seguro Obligatorio" description="Seguros Banorte ve por  tu seguridad poniendo a tu alcance el Seguro Obligatorio" src="/seguros/images/BannerRC.jpg" href="/seguros/seguros-auto/seguro-obligatorio.html"/>
+</images>
+

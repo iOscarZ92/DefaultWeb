@@ -1,0 +1,37 @@
+:root {
+    --color-banorte: #EB0029;
+    --background-gris-oscuro: #444444;
+    --background-negro: #000000;
+    --background-white: #ffffff;
+    --background-gris-claro: #D0D0D0;
+    --background-crema: #fff5e5;
+    --color-texto-claro: #ffffff;
+    --color-texto-negro: #000000;
+    --color-texto-gris: #707070;
+    --color-texto-gris2: #3D3C3C;
+    --color-texto-naranja: #ffa400;
+    --gris-claro: #D0CDCD;
+    --fondo-botones: #EB0029;
+    --tamanio-predeterminado: 14px;
+    --background-grey: #F3F3F3;
+    --tamanio-10: 10px;
+    --tamanio-12: 12px;
+    --tamanio-14: 14px;
+    --tamanio-16: 16px;
+    --tamanio-18: 18px;
+    --tamanio-20: 20px;
+    --tamanio-25: 25px;
+    --tamanio-35: 35px;
+    --color-divisor: #F9F9F9;
+    --color-fondo-banorte: rgba(225, 37, 27, 0.05);
+    --color-fondo-banorte-rosa: rgba(225, 37, 27, 0.1);
+    --color-fondo-gris: #F3F3F3;
+    --color-fondo-gris2: #EDEDED;
+    --color-fondo-bco: #ffffff;
+    --fuente-default: 'Gotham-Medium';
+    --fuente-secundaria: 'Gotham-Book';
+    --fuente-ultra: 'Gotham-Ultra';
+    --link-decoration: underline;
+    --color-borde-cotizar: #E6EAEA;
+    --color-border-footer: #ffffff30;
+}

@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="shortcut icon" href="../assets/images/ico/favicon.ico" />
+    <meta name="sitedomain" content="www.segurosbanorte.com.mx" />
+    <meta name="country" content="México" />
+    <meta charset="utf-8" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Banorte | Seguros</title>
+    <!-- core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../assets/css/animate.min.css" rel="stylesheet" />
+    <link href="../assets/css/prettyPhoto.css" rel="stylesheet" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/seguros-style.css" rel="stylesheet" />
+    <link href="../assets/css/responsive.css" rel="stylesheet" />
+    <link href="../assets/css/accordion.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/jquery.bxslider.css" type="text/css" />
+    <link href="../assets/css/style.css" type="text/css" rel="stylesheet" />
+    <link href="../assets/css/custom_seguros-vida.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="../assets/images/ico/apple-touch-icon-57-precomposed.png" />
+    <script type="text/javascript" src="../assets/js/tinybox.js"></script>
+    <script src="../assets/js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script type="text/javascript" charset="utf-8">
+        function Ejecuta() {
+            <!--Esta linea es para Producción: -->
+            <!--TINY.box.show({iframe:'http://www.segurosbanorte.com.mx/SolBanorte/Application/Operation/SeguroVida.aspx',boxid:'frameless',width:600,height:550,fixed:true,maskid:'redmask',             maskopacity:40,closejs:function(){closeJS()}})-->
+            <!-- Linea para QA -->
+            <!--  TINY.box.show({iframe:'../solbanorteseguros/Application/Operation/SeguroVida.aspx',boxid:'frameless',width:600,height:550,fixed:true,maskid:'redmask',             maskopacity:40,closejs:function(){closeJS()}}) -->
+            TINY.box.show({
+                iframe: '../SolBanorte/Application/Operation/SeguroVida.aspx',
+                boxid: 'frameless',
+                width: 600,
+                height: 550,
+                fixed: true,
+                maskid: 'redmask',
+                maskopacity: 40,
+                closejs: function() {
+                    closeJS()
+                }
+            })
+
+        }
+    </script>
+</head>
+
+<body class="homepage">
+    <div id="new-header">
+        <script type="text/javascript">
+            $("#new-header").load("../header.html");
+        </script>
+    </div>
+    <!-- STAGE INICIAL -->
+    <section class="inicio-area-2nivel" style="background-image: url(../assets/images/banner-VidaEstandarizado-NUEVO.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 map-content">
+                    <h1 class="texto-rojo">Básico Estandarizado</h1>
+                    <p class="animation animated-item-2">La tranquilidad que tus<br>seres queridos merecen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--MENU DETALLES -->
+    <div>
+    </div>
+    <div id="sub-bottom">
+        <div class="container">
+            <ul class="nav nav-tabs desktop-view">
+                <li class="active"><a href="#descripcion" data-toggle="tab">DESCRIPCIÓN</a> </li>
+                <li><a href="#paquetes" data-toggle="tab">COBERTURA</a> </li>
+                <li><a href="#beneficios" data-toggle="tab">BENEFICIOS</a> </li>
+                <li><a href="#medios" data-toggle="tab">MEDIOS DE PAGO</a> </li>
+                <li><a href="#formas" data-toggle="tab">FORMAS DE PAGO</a> </li>
+                <li><a href="#requisitos" data-toggle="tab">REQUISITOS DE CONTRATACIÓN</a> </li>
+                <li><a href="#recomendaciones" data-toggle="tab">RECOMENDACIONES</a> </li>
+                <li><a href="#cotiza" data-toggle="tab">COTIZA</a> </li>
+                <li><a href="#medioscontratacion" data-toggle="tab">MEDIOS DE CONTRATACIÓN</a> </li>
+            </ul>
+            <div id="drop-movil" class="movil-view">
+                <form>
+                    <div class="form-group">
+                        <select id="status" name="status" onchange="mostrar(this.value);" class="selector">
+                            <option value="contenido01">DESCRIPCIÓN</option>
+                            <option value="contenido02">COBERTURA</option>
+                            <option value="contenido03">BENEFICIOS</option>
+                            <option value="contenido04">MEDIOS DE PAGO</option>
+                            <option value="contenido05">FORMAS DE PAGO</option>
+                            <option value="contenido06">REQUISITOS DE CONTRATACIÓN</option>
+                            <option value="contenido07">RECOMENDACIONES</option>
+                            <option value="contenido08">COTIZA</option>
+                            <option value="contenido09">MEDIOS DE CONTRATACIÓN</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-9">
+            <div class="tab-content desktop-view">
+                <div class="tab-pane fade in active" id="descripcion">
+                    <h2 class="titulo-detalles">
+                        Básico Estandarizado</h2>
+                    <p>
+                        Tipo de Seguro: Seguro de Vida Individual Temporal 5</p>
+                    <br />
+                    <p>
+                        Objeto del Seguro: la Compañía, se obliga a pagar a los Beneficiarios designados la Suma Asegurada prevista en este Contrato de Seguro, siempre que la Póliza se encuentre vigente a la ocurrencia del fallecimiento del Asegurado.
+                        <br />
+                        <br /> Moneda: Nacional
+                        <br />
+                        <br /> Opciones de Suma Asegurada:
+                        <ul>
+                            <li>$ 100,000.00 pesos.</li>
+                            <li>$ 200,000.00 pesos.</li>
+                            <li>$ 300,000.00 pesos. Monto máximo de cobertura por persona.</li>
+                        </ul>
+                        <br /> Temporalidad del Plan: 5 años Renovable
+                    </p>
+                    <br />
+                    <br />
+                </div>
+                <div class="tab-pane fade " id="paquetes">
+                    <h2 class="titulo-detalles">
+                        Cobertura</h2>
+                    <div class="table-responsive">
+                        <ul>
+                            <li>Este producto cubre el fallecimiento del Asegurado, siempre que éste fallezca, mientras el Contrato de Seguro esté vigente. Si el Asegurado sobrevive al término del mismo, la protección terminará sin obligación alguna para
+                                la Compañía. </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="beneficios">
+                    <h2 class="titulo-detalles">
+                        Beneficios</h2>
+                    <div class="table-responsive">
+                        <ul>
+                            <li>Ofrece protección económica para la familia del Asegurado, otorgando la suma asegurada por fallecimiento.</li>
+                            <li>Renovación vitalicia.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="medios">
+                    <h2 class="titulo-detalles">
+                        Medios de pago</h2>
+                    <div class="table-responsive">
+                        <ul>
+                            <li>Efectivo</li>
+                            <li>Cuenta de Cheques</li>
+                            <li>Tarjeta de Crédito</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="formas">
+                    <h2 class="titulo-detalles">
+                        Formas de pago</h2>
+                    <div class="table-responsive">
+                        <ul>
+                            <li>Anual</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="requisitos">
+                    <h2 class="titulo-detalles">
+                        Requisitos de Contratación</h2>
+                    <div class="table-responsive">
+                        <ul>
+                            <li>Llenar y firmar la Solicitud.</li>
+                            <li>Proporcionar copia de tu identificación oficial.</li>
+                        </ul>
+                        <br />
+                        <ul>
+                            <li>Edades de Aceptación: </li>
+                            <br /> Mínima de Admisión: 18 años.<br /> Máxima de Aceptación: 65 años.<br /> Máxima de Renovación: Vitalicia.<br />
+                        </ul>
+                        <br />
+                        <br />
+                        <ul>
+                            <li>Marcar al teléfono 800-837-1133 para que se te asigne la oficina donde recibiremos la solicitud.</li>
+                            <li>Residir en la República Mexicana.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="recomendaciones">
+                    <h2 class="titulo-detalles">
+                        Recomendaciones de Uso</h2>
+                    <div class="table-responsive">
+                        <ul>
+                            <li>Tienes 30 días naturales para solicitar algún cambio a la póliza si tu plan o cobertura no están de acuerdo a lo solicitado. Te recomendamos verificar tu póliza al recibirla.
+                            </li>
+                            <li>Verifica que los nombres de tus beneficiarios estén correctos</li>
+                            <li>Lee las condiciones generales de este producto, incluidas en la sección de documentación de esta página.</li>
+                            <li>Informa a tus beneficiarios del seguro que has adquirido, entrégales la póliza y condiciones generales.</li>
+                            <li>Los formatos que se requieren para alguna reclamación los encontrarás en la sección de Documentación de esta página.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="cotiza">
+                    <h2 class="titulo-detalles">
+                        Cotiza</h2>
+                    <div class="table-responsive">
+                        <p>
+                            Es importante señalar, que las edades de aceptación para este producto van de los 18 a los 65 años. No obstante lo anterior, esta herramienta proporcionará para efectos informativos el costo de la prima hasta una edad de 99 años.
+                        </p>
+                        <a onclick="Ejecuta()" style="cursor: pointer;">Ingresa aquí para cotizar tu seguro</a>
+                        <br />
+                        <br />
+                        <br />
+                        <p style="vertical-align: middle; text-align: justify">
+                            <span>Para cualquier duda, comunícate a nuestro Centro de Atención </span><span style="font-weight: bold;">
+                                800 837 1133 </span>disponible de lunes a viernes de 8:00 a.m. a 8:00 p.m. O envíanos un correo a: <a class="tabs" style="text-decoration: underline">atencionclientes.seguros@banorte.com</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="medioscontratacion">
+                    <h2 class="titulo-detalles">
+                        Medios de Contratación</h2>
+                    <p>
+                        Si estás interesado en el Seguro Básico Estandarizado y quieres que un asesor te informe más sobre éste, <a href="\contacto\contacto.html" class="contacto"><b>ingresa aquí</b></a></p>
+                </div>
+            </div>
+            <!--/tab-content-->
+            <div id="contenido-movil" class="movil-view">
+                <div id="contenido01" class="contenido-movil">
+                    <h2 class="titulo-detalles">
+                        Básico Estandarizado</h2>
+                    <p>
+                        Tipo de Seguro: Seguro de Vida Individual Temporal 5</p>
+                    <br />
+                    <p>
+                        Objeto del Seguro: la Compañía, se obliga a pagar a los Beneficiarios designados la Suma Asegurada prevista en este Contrato de Seguro, siempre que la Póliza se encuentre vigente a la ocurrencia del fallecimiento del Asegurado y se cumpla con lo referente
+                        a la comprobación del siniestro establecido en el numeral 4.2 de las condiciones generales de este producto.
+                        <br />
+                        <br /> Moneda: Nacional
+                        <br />
+                        <br /> Opciones de Suma Asegurada:
+                        <ul>
+                            <li>$ 100,000.00 pesos.</li>
+                            <li>$ 200,000.00 pesos.</li>
+                            <li>$ 300,000.00 pesos. Monto máximo de cobertura por persona.</li>
+                        </ul>
+                        <br /> Temporalidad del Plan: 5 años Renovable
+                    </p>
+                    <br />
+                    <br />
+                </div>
+                <!--contenido01-->
+                <div id="contenido02" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">
+                        Cobertura</h2>
+                    <div class="table-movil">
+                        <ul>
+                            <li>Este producto cubre el fallecimiento del Asegurado, siempre que éste fallezca, mientras el Contrato de Seguro esté vigente. Si el Asegurado sobrevive al término del mismo, la protección terminará sin obligación alguna para
+                                la Compañía. </li>
+                        </ul>
+                    </div>
+                    <!--/.table-movil-->
+                </div>
+                <!--contenido02-->
+                <div id="contenido03" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">
+                        Beneficios</h2>
+                    <div class="table-movil">
+                        <ul>
+                            <li>Ofrece protección económica para la familia del Asegurado, otorgando la suma asegurada por fallecimiento.</li>
+                            <li>Renovación vitalicia.</li>
+                        </ul>
+                    </div>
+                    <!--/.table-movil-->
+                </div>
+                <!--contenido02-->
+                <div id="contenido04" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">
+                        Medios de pago</h2>
+                    <div class="table-movil">
+                        <ul>
+                            <li>Efectivo</li>
+                            <li>Cuenta de Cheques</li>
+                            <li>Tarjeta de Crédito</li>
+                        </ul>
+                    </div>
+                    <!--/.table-movil-->
+                </div>
+                <!--contenido03-->
+                <div id="contenido05" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">
+                        Formas de pago</h2>
+                    <div class="table-movil">
+                        <ul>
+                            <li>Anual</li>
+                        </ul>
+                    </div>
+                    <!--/.table-movil-->
+                </div>
+                <!--contenido04-->
+                <div id="contenido06" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">
+                        Requisitos de Contratación</h2>
+                    <div class="table-movil">
+                        <ul>
+                            <li>Llenar y firmar la Solicitud.</li>
+                            <li>Proporcionar copia de tu identificación oficial.</li>
+                        </ul>
+                        <br />
+                        <ul>
+                            <li>Edades de Aceptación: </li>
+                            <br /> Mínima de Admisión: 18 años.<br /> Máxima de Aceptación: 65 años.<br /> Máxima de Renovación: Vitalicia.<br />
+                        </ul>
+                        <br />
+                        <br />
+                        <ul>
+                            <li>Marcar al teléfono 800-837-1133 para que se te asigne la oficina donde recibiremos la solicitud.</li>
+                            <li>Residir en la República Mexicana.</li>
+                        </ul>
+                    </div>
+                    <!--/.table-movil-->
+                </div>
+                <!--contenido06-->
+                <div id="contenido07" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">
+                        Recomendaciones de Uso</h2>
+                    <div class="table-movil">
+                        <ul>
+                            <li>Tienes 30 días naturales para solicitar algún cambio a la póliza si tu plan o cobertura no están de acuerdo a lo solicitado. Te recomendamos verificar tu póliza al recibirla.
+                            </li>
+                            <li>Verifica que los nombres de tus beneficiarios estén correctos</li>
+                            <li>Lee las condiciones generales de este producto, incluidas en la sección de documentación de esta página.</li>
+                            <li>Informa a tus beneficiarios del seguro que has adquirido, entrégales la póliza y condiciones generales</li>
+                            <li>Los formatos que se requieren para alguna reclamación los encontrarás en la sección de Documentación de esta página.</li>
+                        </ul>
+                    </div>
+                    <!--/.table-movil-->
+                </div>
+                <!--contenido06-->
+                <div id="contenido08" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">
+                        Cotiza</h2>
+                    <div class="table-movil">
+                        <p>
+                            Es importante señalar, que las edades de aceptación para este producto van de los 18 a los 65 años. No obstante lo anterior, esta herramienta proporcionará para efectos informativos el costo de la prima hasta una edad de 99 años.
+                        </p>
+                        <a onclick="Ejecuta()" style="cursor: pointer;">Ingresa aquí para cotizar tu seguro</a>
+                        <br />
+                        <br />
+                        <br />
+                        <p style="vertical-align: middle; text-align: justify">
+                            <span>Para cualquier duda, comunícate a nuestro Centro de Atención </span><span style="font-weight: bold;">
+                                800 837 1133 </span>disponible de lunes a viernes de 8:00 a.m. a 8:00 p.m. O envíanos un correo a: <a class="tabs" style="text-decoration: underline">atencionclientes.seguros@banorte.com</a>
+                            </span>
+                        </p>
+                    </div>
+                    <!--/.table-movil-->
+                </div>
+                <!--contenido06-->
+                <div id="contenido09" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">
+                        Medios de Contratación</h2>
+                    <p>
+                        Si estás interesado en el Seguro Vida Estandarizado y quieres que un asesor te informe más sobre éste, <a href="\contacto\contacto.html" class="contacto"><b>ingresa aquí</b></a>
+                    </p>
+                </div>
+                <!--contenido09-->
+            </div>
+            <!--/#contenido-movil-->
+        </div>
+        <div class="col-md-3 shortcode-item">
+            <div class="page-bar">
+                <span class="page-bar-titulo">¿Necesitas más ayuda?</span>
+                <p>
+                    Contacta a alguno de nuestros asesores especializado</p>
+                <ul class="page-bar-contacto">
+                    <li><a href="\contacto\contacto.html" id="chatenvivo"><i class="fa fa-comments close_rojo"></i>Chat en vivo</a></li>
+                    <li><a href="\contacto\contacto.html" class="contacto"><i class="fa fa-envelope-o close_rojo"></i>Email</a></li>
+                    <li><i class="icon-telefono"></i>Centro de Contacto
+                        <br /> 800-837-1133
+                    </li>
+                </ul>
+                <h3>
+                </h3>
+                <ul class="page-bar-opciones">
+                    <li><a href="../seguros-vida/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><a href="../seguros-vida/asistencia-inmediata.html">Asistencia Inmediata</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="new-footer">
+        <script type="text/javascript">
+            $("#new-footer").load("../footer.html");
+        </script>
+    </div>
+    <!--empresasBanorte-->
+    <!-- Analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-23249775-5']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menus>
+	<menu id="0" title="Autos" href="#">
+		<menu id="00" title="Auto" href="/seguros/seguros-auto/seguro-auto.html">
+			<menu id="000" title="Auto" href="/seguros/seguros-auto/seguro-auto.html#auto" />
+			<menu id="001" title="Pick-up" href="/seguros/seguros-auto/seguro-auto.html#pick-up" />
+			<menu id="002" title="Condiciones Generales" href="/seguros/seguros-auto/seguro-auto.html#condiciones"/>
+		</menu>
+    <menu id="01" title="Moto" href="/seguros/seguros-auto/seguro-moto.html">
+      <menu id="010" title="Moto" href="/seguros/seguros-auto/seguro-moto.html#moto"/>
+      <menu id="011" title="Condiciones Generales" href="/seguros/seguros-auto/seguro-moto.html#condiciones"/>
+    </menu>
+		<menu id="02" title="Camiones" href="/seguros/seguros-auto/seguro-camion.html">
+			<menu id="020" title="Ligero" href="/seguros/seguros-auto/seguro-camion.html#ligero" />
+			<menu id="021" title="Pesado" href="/seguros/seguros-auto/seguro-camion.html#pesado" />
+			<menu id="022" title="Condiciones Generales" href="/seguros/seguros-auto/seguro-camion.html#condiciones"/>
+		</menu> 
+    <menu id="03" title="Taxi" href="/seguros/seguros-auto/seguro-taxi.html">
+      <menu id="030" title="Taxi" href="/seguros/seguros-auto/seguro-taxi.html#taxi"/>
+      <menu id="031" title="Condiciones Generales" href="/seguros/seguros-auto/seguro-taxi.html#condiciones"/>
+    </menu>
+    <menu id="04" title="Autobuses" href="/seguros/seguros-auto/seguro-autobus.html">
+      <menu id="040" title="Autobuses" href="/seguros/seguros-auto/seguro-autobus.html#autobus"/>
+      <menu id="041" title="Condiciones Generales" href="/seguros/seguros-auto/seguro-autobus.html#condiciones"/>
+    </menu>
+    <menu id="05" title="Microbuses" href="/seguros/seguros-auto/seguro-microbus.html">
+      <menu id="050" title="Microbuses" href="/seguros/seguros-auto/seguro-microbus.html#microbus"/>
+      <menu id="051" title="Condiciones Generales" href="/seguros/seguros-auto/seguro-microbus.html#condiciones"/>
+    </menu>
+    <menu id="06" title="Auto Turista" href="/seguros/seguros-auto/seguro-turista.html">
+      <menu id="060" title="Auto Turista" href="/seguros/seguros-auto/seguro-turista.html#auto-turista"/>
+      <menu id="061" title="Condiciones Generales" href="/seguros/seguros-auto/seguro-turista.html#condiciones"/>
+    </menu>
+    <menu id="07" title="Apoyo en Pérdida Total por Daños" href="/seguros/seguros-auto/Apoyo.html">
+      <menu id="070" title="Apoyo en Pérdida Total por Daños" href="/seguros/seguros-auto/Apoyo.html#Apoyo en Pérdida Total por Daños"/>
+      <menu id="071" title="Condiciones Generales" href="/seguros/seguros-auto/Apoyo.html#condiciones"/>
+    </menu>
+	<menu id="011" title="Seguro Básico Estandarizado" href="/seguros/seguros-auto/seguro-basicoestandarizado.htm"/>
+    <menu id="012" title="Seguro Obligatorio" href="/seguros/seguros-auto/seguro-obligatorio.html"/>
+  		<menu id="07" title="Preguntas Frecuentes" href="/seguros/seguros-auto/preguntas-frecuentes.html" />
+		<menu id="08" title="Asistencia inmediata" href="/seguros/seguros-auto/asistencia-inmediata.html" />
+		<menu id="09" title="Inspeccion Vehicular" href="/seguros/seguros-auto/inspeccion-vehicular.html" />
+	</menu>
+	<menu id="1" title="Daños" href="#">
+		<menu id="10" title="Protección Hogar" href="/seguros/seguros-hogar/seguro-hogar.html" />
+		<menu id="11" title="Preguntas Frecuentes" href="/seguros/seguros-hogar/preguntas-frecuentes.html" />
+		<menu id="12" title="Asistencia inmediata" href="/seguros/seguros-hogar/asistencia-inmediata.html" />
+	</menu>
+	<menu id="2" title="Vida" href="#">
+		<menu id="20" title="Vida y Familia" href="/seguros/seguros-vida/seguro-vida-familia.html">
+			<menu id="200" title="Protección Vida Individual" href="/seguros/seguros-vida/seguro-vida-familia.html#individual" />
+			<menu id="201" title="Protección Vida Esencial" href="/seguros/seguros-vida/seguro-vida-familia.html#esencial" />
+			<menu id="202" title="Protección Vida Plus" href="/seguros/seguros-vida/seguro-vida-familia.html#plus" />
+			<menu id="203" title="Protección Funeraria" href="/seguros/seguros-vida/seguro-vida-familia.html#funeraria" />
+		    <menu id="204" title="Seguro Educativo Banorte" href="/seguros/seguros-vida/seguro-vida-familia.html#educativo"/>
+		    <menu id="204" title="Mensajes de Vida" href="/seguros/seguros-vida/seguro-vida-familia.html#mensajes"/>
+		</menu>
+		<menu id="23" title="Vida Estandarizado" href="/seguros/seguros-vida/seguro-vida-estandarizado.html"/>
+		<menu id="21" title="Preguntas Frecuentes" href="/seguros/seguros-vida/preguntas-frecuentes.html" />
+		<menu id="22" title="Asistencia inmediata" href="/seguros/seguros-vida/asistencia-inmediata.html" />
+		
+	</menu>
+	<menu id="3" title="GMM" href="#">
+		<menu id="30" title="Plan Médico Total" href="/seguros/gastos-medicos/medico-total.html" />
+		<menu id="31" title="Plan Médico Esencial" href="/seguros/gastos-medicos/medico-esencial.html" />
+    	<menu id="32" title="Más Visión Médica Colectivo" href="/seguros/gastos-medicos/vision-medica-plus-colectiva.html"/>
+    	<menu id="33" title="AP Escolar" href="/seguros/gastos-medicos/ap-escolar.html"/>
+		<menu id="38" title="AP Estandarizado" href="/seguros/gastos-medicos/ap-estandarizado.html"/>
+		<menu id="38" title="GMM Estandarizado" href="/seguros/gastos-medicos/gmm-estandarizado.html"/>
+    	<menu id="34" title="Directorio Médico" href="/seguros/gastos-medicos/directorio-medico.html"/>
+    	<menu id="35" title="Datos Generales Médico" href="/seguros/gastos-medicos/datos-generales-medico.html"/>
+    	<menu id="36" title="Coordinación Médica" href="/seguros/gastos-medicos/coordinacion-medica.html"/>
+    	<menu id="37" title="Asistencia Inmediata" href="/seguros/gastos-medicos/asistencia-inmediata.html"/>
+	</menu>
+
+	<menu id="8" title="PYME" href="#">
+			<menu id="80" title="Auto Flotillas PYME" href="/seguros/PyME/auto-flotillas.html" />
+			<menu id="81" title="Comercial e Industrial PyME" href="/seguros/PyME/comercial-industrial.html" />
+	</menu>
+
+  <menu id="9" title="Documentación" href="#">
+    <menu id="90" title="Autos" href="/seguros/Documentacion/documentacion_autos.html" />
+    <menu id="91" title="Gastos Médicos" href="/seguros/Documentacion/documentacion_gmm.html" />
+    <menu id="92" title="Vida" href="/seguros/Documentacion/documentacion_vida.html" />
+    <menu id="93" title="Daños" href="/seguros/Documentacion/documentacion_daños.html" />
+    <menu id="94" title="AP" href="/seguros/Documentacion/documentacion_ap.html" />
+  </menu>
+  
+	<menu id="4" title="Atención a clientes" href="#">
+		<menu id="40" title="Oficinas principales" href="/seguros/atencion-clientes/oficinas-principales.html" />
+		<menu id="41" title="Oficinas de ventas" href="/seguros/atencion-clientes/oficinas-ventas.html" />
+		<menu id="42" title="Oficinas de atención a siniestros de Auto" href="/seguros/atencion-clientes/oficinas-siniestros.html" />
+		<menu id="43" title="Aclaraciones y quejas" href="/seguros/atencion-clientes/aclaraciones-quejas.html"/>
+		<menu id="44" title="Contacto CONDUSEF" href="/seguros/atencion-clientes/ContactoCondusef.html" />
+		<menu id="45" title="Unidad Especializada de Atención a Usuarios" href="/seguros/atencion-clientes/UnidadEspecializada.html" />
+	</menu>	
+	<menu id="5" title="Contratación en línea" href="#">
+		<menu id="50" title="Seguro de Auto" href="https://www.espaciobanorte.com/cotizadores/cotizador/wizardauto/?usuarioActual=12713&amp;oficinaActual=4586" />
+		<menu id="51" title="Seguro de Auto Turista" href="https://www.espaciobanorte.com/cotizadores/cotizador/wizardauto/?usuarioActual=12713&amp;oficinaActual=4600" />
+	</menu>
+
+	<menu id="7" title="Empleo" href="#">
+	    	<menu id="70" title="Trabaja con nosotros" href="../info/trabaja-con-nosotros.html"/>
+	</menu>
+</menus>

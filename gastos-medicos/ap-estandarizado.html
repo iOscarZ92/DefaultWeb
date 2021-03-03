@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="shortcut icon" href="../assets/images/ico/favicon.ico" />
+    <meta name="sitedomain" content="www.segurosbanorte.com.mx" />
+    <meta name="country" content="México" />
+	<meta charset="utf-8" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Banorte | Seguros</title>
+	<!-- core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../assets/css/animate.min.css" rel="stylesheet"/>
+    <link href="../assets/css/prettyPhoto.css" rel="stylesheet"/>
+    <link href="../assets/css/main.css" rel="stylesheet"/>
+    <link href="../assets/css/seguros-style.css" rel="stylesheet"/>
+    <link href="../assets/css/responsive.css" rel="stylesheet"/>
+    <link href="../assets/css/accordion.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../assets/css/jquery.bxslider.css" type="text/css" />
+	<link href="../assets/css/style.css" type="text/css" rel="stylesheet" />
+    <link href="../assets/css/custom_gastos-medicos.css" rel="stylesheet" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="../assets/images/ico/apple-touch-icon-57-precomposed.png"/>
+	<script type="text/javascript" src="../assets/js/tinybox.js"></script>
+    <script src="../assets/js/jquery-3.3.1.js" type="text/javascript"></script>
+	<script type="text/javascript" charset="utf-8">
+    	function Ejecuta(){
+			<!--Esta linea es para Producción: -->
+			 <!--TINY.box.show({iframe:'http://www.segurosbanorte.com.mx/SolBanorte/Application/Operation/AP.aspx',boxid:'frameless',width:900,height:600,fixed:true,maskid:'redmask', maskopacity:40,closejs:function(){closeJS()}}) -->
+			<!-- Linea para QA -->
+			 <!-- TINY.box.show({iframe:'../solbanorteseguros/Application/Operation/AP.aspx',boxid:'frameless',width:700,height:800,fixed:false,maskid:'redmask', maskopacity:40,closejs:function(){closeJS()}}) -->
+			 TINY.box.show({iframe:'../SolBanorte/Application/Operation/AP.aspx',boxid:'frameless',width:900,height:600,fixed:false,maskid:'redmask', maskopacity:40,closejs:function(){closeJS()}})
+
+	 	}
+    </script>
+    <script type="text/javascript" charset="utf-8">
+    	function Cancelar(){
+			<!--Esta linea es para Producción: -->
+			<!-- TINY.box.hide({iframe:'http://www.segurosbanorte.com.mx/SolBanorte/Application/Operation/AP.aspx',boxid:'frameless',width:900,height:600,fixed:true,maskid:'redmask', maskopacity:40,closejs:function(){closeJS()}}) -->
+			<!-- Linea para QA -->
+			<!-- TINY.box.show({iframe:'../solbanorteseguros/Application/Operation/AP.aspx',boxid:'frameless',width:600,height:600,fixed:true,maskid:'redmask', maskopacity:40,closejs:function(){closeJS()}}) -->
+			TINY.box.show({iframe:'../SolBanorte/Application/Operation/AP.aspx',boxid:'frameless',width:600,height:600,fixed:true,maskid:'redmask', maskopacity:40,closejs:function(){closeJS()}})
+	 	}
+    </script>
+</head>
+<body class="homepage">
+	<div id="new-header">
+        <script type="text/javascript">
+            $("#new-header").load("../header.html");
+        </script>
+    </div>
+    <!-- STAGE INICIAL -->
+    <section class="inicio-area-2nivel" style="background-image:url(../assets/images/banner-AP-Estandarizado-NUEVO.jpg);">
+    	<div class="container">
+       		<div class="row">
+           	    <div class="col-sm-7 map-content">
+					<h1 class="texto-rojo">AP Estandarizado</h1>
+					<p class="animation animated-item-2" style="color:black">La protección que tú<br>y los tuyos necesitan</p>
+                </div>
+           </div>
+        </div>
+    </section>
+    <!--MENU DETALLES -->
+	<div id="sub-bottom">
+        <div class="container">
+            <ul class="nav nav-tabs desktop-view">
+                <li class="active">
+                    <a href="#_descripcion" data-toggle="tab">DESCRIPCIÓN</a>
+                </li>
+				<li>
+                    <a href="#_coberturas" data-toggle="tab">COBERTURAS</a>
+                </li>
+				<li>
+                    <a href="#_beneficios" data-toggle="tab">BENEFICIOS</a>
+                </li>
+				<li>
+                    <a href="#_medios" data-toggle="tab">MEDIOS DE PAGO</a>
+                </li>
+				<li>
+                    <a href="#_formas" data-toggle="tab">FORMAS DE PAGO</a>
+                </li>
+				<li>
+                        
+                    <a href="#_requisitos" data-toggle="tab">REQUISITOS DE CONTRATACIÓN</a>
+                </li>
+				<li>
+                    <a href="#_recomendaciones" data-toggle="tab">RECOMENDACIONES</a>
+                </li>
+				<li>
+                    <a href="#_cotiza" data-toggle="tab">COTIZA</a>
+                </li>
+                <li>
+                    <a href="#_medioscontratacion" data-toggle="tab">MEDIOS DE CONTRATACIÓN</a>
+                </li>
+            </ul>
+            <div id="drop-movil" class="movil-view">
+                <form>
+                    <div class="form-group">
+                        <select id="status" name="status" onChange="mostrar(this.value);" class="selector">
+                            <option value="contenido01">DESCRIPCIÓN</option>
+							<option value="contenido02">COBERTURAS</option>
+							<option value="contenido03">BENEFICIOS </option>
+								
+							<option value="contenido04">MEDIOS DE PAGO</option>
+							<option value="contenido05">FORMAS DE PAGO</option>
+							<option value="contenido06">REQUISITOS DE CONTRATACIÓN</option>
+							<option value="contenido07">RECOMENDACIONES</option>
+							<option value="contenido08">COTIZA</option>
+                            <option value="contenido09">MEDIOS DE CONTRATACIÓN</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+		<div class="col-md-9">
+            <div class="tab-content desktop-view">
+				<div class="tab-pane fade in active" id="_descripcion">
+					<h2 class="titulo-detalles">AP Estandarizado</h2>
+					<p>
+					Tipo de Seguro: Seguro de Accidentes  Individual.</p>
+					<br />
+					<p> Objeto del Seguro: la Compañía, pagará a los beneficiarios designados la Suma Asegurada Contratada,  a consecuencia
+						de algún accidente, que produzca la muerte del asegurado según lo descrito en las Condiciones Generales de este producto,
+						siempre y cuando ocurra durante la vigencia de la póliza.
+						<br /><br />
+						Moneda: Nacional
+						<br /><br />
+						Opciones de suma asegurada:
+						</p>
+					<ul>
+						<li>$ 100,000.00 pesos.</li>
+						<li>$ 200,000.00 pesos. Monto máximo de cobertura por persona</li>
+					</ul>
+					<p>Temporalidad del Plan: Anual Renovable</p>
+				</div>
+				<div class="tab-pane" id="_coberturas">
+					<h2 class="titulo-detalles">Coberturas</h2>
+					<div class="table-responsive">
+						<ul>
+							<li>Este producto cubre la Muerte Accidental del Asegurado</li>
+							<li>la tarifa está definida por edad, género y <b>ocupación del solicitante</b></li>
+						</ul>
+						<p><b>Ocupación del solicitante:</b> Se refiere al nivel de riesgo de la actividad que
+								realiza y que se clasifican en 3 Riesgos</p>
+
+						<p><b>RIESGO A:</b>
+							<br />
+							Personas que trabajan tiempo completo en lugares no peligrosos tales como oficinas,
+							tiendas, locales, despachos, etc., cuya ocupación no representa peligro especial.
+							<br />
+							Ejemplo: oficinistas, farmacéuticos, optometristas, bibliotecarios, sastres,
+							modistas, dibujantes, etc.
+							<br /><br />
+							<b>RIESGO B:</b><br />
+							1. Personas cuya ocupación se desempeña principalmente en la calle sin exposición de riesgos
+								calificados.<br />
+								Ejemplo: cobradores, vendedores, inspectores, propagandistas, etc.<br /><br />
+							2. Personas que realizan trabajos manuales ligeros utilizando material y herramienta poco peligrosa.<br />
+								Ejemplo:	reparadores de radio, televisión, refrigeradores, estufas, encuadernadores, tapizadores, cortineros, etc.
+							<br /><br />
+							<b>RIESGO C:</b><br />
+							1. Personas que necesiten viajar constantemente para el desempeño de su ocupación habitual, sin exposición de riesgos calificados.<br />
+								Ejemplo: agentes viajeros, inspectores viajeros, auditores viajeros, comerciantes viajeros, propagandistas viajeros, etc.<br /><br />
+							2. Personas que supervisan procesos de manufactura y operaciones de construcción.<br />
+								Ejemplo: ingenieros, arquitectos, superintendentes, contratistas, etc.<br />
+							<br />
+							En caso de ocupaciones no clasificadas en estos niveles de riesgo verificarán en la Compañía de seguros
+							cuál es el incremento de la prima dado la actividad que realicen, es decir el seguro básico no aplicará para ellos.
+							<br />
+							<ul>
+								<li>En caso de practicar algún deporte de manera ocasional se deberá reportar a la aseguradora, especificando
+									el deporte y la frecuencia con que lo practica.
+								</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+				<div class="tab-pane" id="_beneficios">
+					<h2 class="titulo-detalles">Beneficios</h2>
+					<ul class="normalBullet">
+						<li>Ofrece protección económica para la familia del asegurado, a causa de que este fallezca por un accidente.</li>
+						<li>Renovación vitalicia.</li>
+					</ul>
+				</div>
+				<div class="tab-pane" id="_medios">
+					<h2 class="titulo-detalles">Medios de Pago</h2>
+					<ul>
+						<li>Efectivo</li>
+					</ul>
+				</div>
+				<div class="tab-pane" id="_formas">
+					<h2 class="titulo-detalles">Formas de Pago</h2>
+					<ul>
+						<li>Anual</li>
+					</ul>
+				</div>
+				<div class="tab-pane" id="_requisitos">
+					<h2 class="titulo-detalles">Requisitos de contratación</h2>
+					<ul>
+						<li> Llenar y firmar la Solicitud <a href="..\descargas\seguros\gmm\Solicitud_AP_Estandarizado.pdf" target="_blank" style="color:#B01657;">(Solicitud).</a></li>
+						<li>Proporcionar copia de tu identificación oficial.</li>
+					</ul>
+					<ul>
+						<li>Edad de Aceptación: </li>
+							Mínima de Admisión:	12 años<br />
+							Máxima de Aceptación: 65 años<br />
+							Máxima de Renovación: Vitalicia<br />
+					</ul>
+
+					<ul>
+						<li>Marcar al teléfono 800 837 1133 para que se te asigne la oficina donde recibiremos la solicitud</li>
+						<li>Residir en la República Mexicana</li>
+					</ul>
+				</div>
+				<div class="tab-pane" id="_recomendaciones">
+					<h2 class="titulo-detalles">Recomendaciones</h2>
+					<ul>
+						<li>Tienes 30 días naturales para solicitar algún cambio a la póliza si tu plan o cobertura no están de acuerdo a lo solicitado. Te 							                  						recomendamos verificar tu póliza al recibirla.
+						</li>
+						<li>Verifica que los nombres de tus beneficiarios estén correctos.</li>
+						<li>Lee las condiciones generales de este producto, incluidas en la sección de documentación de esta página.</li>
+						<li>Informa a tus beneficiarios del seguro que has adquirido, entrégales la póliza y condiciones generales.</li>
+						<li>Los formatos que se requieren para alguna reclamación los encontrarás en la sección de Documentación de esta página.</li>
+					</ul>
+				</div>
+				<div class="tab-pane" id="_cotiza">
+					<h2 class="titulo-detalles">Cotiza</h2>
+					<p>
+						Es importante señalar, que las edades de aceptación para este producto van de los 12 a los 65 años. No obstante lo anterior, esta herramienta    							proporcionará para efectos informativos el costo de la prima hasta una edad de 99 años.
+					</p>
+					<br />
+					<a onclick="Ejecuta()" style="cursor: pointer; color:#B01657">Ingresa aquí para cotizar tu seguro</a>
+					<br />
+					<br />
+					<p style="vertical-align: middle; text-align: justify">
+					<span>Para cualquier duda, comunícate a nuestro Centro de Atención </span>
+					<span style=" font-weight:bold;">800 837 1133 </span> disponible de lunes a viernes de 8:00 a.m. a 8:00 p.m. O envíanos un correo a:
+					<a class="tabs" style="text-decoration: underline" >atencionclientes.seguros@banorte.com</a>
+					</span>
+				</div>
+                <div class="tab-pane" id="_medioscontratacion">
+                    <h2 class="titulo-detalles">Medios de Contratación</h2>
+                    <p>Si estás interesado en el Plan AP Estandarizado y quieres que un asesor te informe más sobre éste,
+                        <a href="/contacto/contacto.html" class="contacto"><b>ingresa aquí</b></a>
+                    </p>
+                </div>
+            </div><!--/tab-content-->
+			<!-- Mobile-->
+            <div id="contenido-movil" class="movil-view">
+                <div id="contenido01" class="contenido-movil">
+					<h2 class="titulo-detalles">AP Estandarizado</h2>
+					<p>
+					Tipo de Seguro: Seguro de Accidentes  Individual.</p>
+					<br />
+					<p> Objeto del Seguro: la Compañía, pagará a los beneficiarios designados la Suma Asegurada Contratada,  a consecuencia
+						de algún accidente, que produzca la muerte del asegurado según lo descrito en las Condiciones Generales de este producto,
+						siempre y cuando ocurra durante la vigencia de la póliza.
+						<br /><br />
+						Moneda: Nacional
+						<br /><br />
+						Opciones de suma asegurada:
+					</p>
+					    <ul>
+						<li>$ 100,000.00 pesos.</li>
+						<li>$ 200,000.00 pesos. Monto máximo de cobertura por persona</li>
+					    </ul>
+					    <p>Temporalidad del Plan: Anual Renovable</p>
+                </div>
+				<!--contenido01-->
+				<div id="contenido02" style="display: none;" class="contenido-movil">
+					<h2 class="titulo-detalles">Coberturas</h2>
+					<div class="table-responsive">
+						<table class="table detalles">
+							<thead>
+								<tr>
+									<th><b>Coberturas</b></th>
+									<th><b>Sumas Aseguradas</b></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Muerte Accidental (12 a 70 años)*</td>
+									<td>Mín $10,000 Max $500,000</td>
+								</tr>
+								<tr>
+									<td>Gastos Funerarios (3 meses a 11 años)</td>
+									<td>Topado a 60 SMGVDF</td>
+								</tr>
+								<tr>
+									<td>Pérdida Orgánica A y B</td>
+									<td>Mín $10,000 Max $500,000</td>
+								</tr>
+								<tr>
+									<td>Reembolso de GMM por Accidente</td>
+									<td>50% de SA de Muerte Accidental con SA máxima de $100,000</td>
+								</tr>
+								<tr>
+									<td>Asistencia Telefónica Educativa</td>
+									<td>Ilímitado</td>
+								</tr>
+								<tr>
+									<td>Asistencia PC</td>
+									<td>Ilímitado</td>
+								</tr>
+								<tr>
+									<td>Ambulancia Terrestre</td>
+									<td>Incluido</td>
+								</tr>
+								<tr>
+									<td>Cuidados Domiciliarios</td>
+									<td>Costo preferencial</td>
+								</tr>
+								<tr>
+									<td>Asistencia Médica Telefónica</td>
+									<td>Ilímitado</td>
+								</tr>
+								<tr>
+									<td>Asistencia Funeraria (empleado, alumno y padre o tutor del alumno)</td>
+									<td>$20,000</td>
+								</tr>
+								<tr>
+									<td>Plan de Urgencias Dentales</td>
+									<td>Consultar Tabla</td>
+								</tr>
+							</tbody>
+						</table>
+						<br />
+						<br />
+						<b>Coberturas opcionales:</b>
+						<ul>
+							<li>Indemnización Diaria por Hospitalización por accidente (a partir de 24hrs y
+							hasta 180 días de hospitalización, <b>empleados y alumnos</b>).</li>
+							<li>Indemnización por invalidez Total y Temporal por Accidente (en
+							múltiplos de $5,000, <b>sólo para empleados</b>).</li>
+						</ul>
+					</div>
+				</div>
+				<div id="contenido03" style="display: none;" class="contenido-movil">
+					<h2 class="titulo-detalles">Beneficios</h2>
+					<ul class="normalBullet">
+						<li>Ofrece protección económica para la familia del asegurado, a causa de que este fallezca por un accidente.</li>
+						<li>Renovación vitalicia.</li>
+					</ul>
+				</div>
+				<div id="contenido04" style="display: none;" class="contenido-movil">						
+					<h2 class="titulo-detalles">Medios de Pago</h2>
+					<ul>
+						<li>Efectivo</li>
+					</ul>
+				</div>
+				<div id="contenido05" style="display: none;" class="contenido-movil">						
+					<h2 class="titulo-detalles">Formas de Pago</h2>
+					<ul>
+						<li>Anual</li>
+					</ul>
+				</div>
+				<div id="contenido06" style="display: none;" class="contenido-movil">						
+					<h2 class="titulo-detalles">Requisitos de Contratación</h2>
+					<ul>
+						<li> Llenar y firmar la Solicitud <a href="..\descargas\seguros\gmm\Solicitud_AP_Estandarizado.pdf" target="_blank" style="color:#B01657;">(Solicitud).</a></li>
+						<li>Proporcionar copia de tu identificación oficial.</li>
+					</ul>
+					<ul>
+						<li>Edad de Aceptación: </li>
+							Mínima de Admisión:	12 años<br />
+							Máxima de Aceptación: 65 años<br />
+							Máxima de Renovación: Vitalicia<br />
+					</ul>
+
+					<ul>
+						<li>Marcar al teléfono 800 837 1133 para que se te asigne la oficina donde recibiremos la solicitud</li>
+						<li>Residir en la República Mexicana</li>
+					</ul>
+				</div>
+				<div id="contenido07" style="display: none;" class="contenido-movil">						
+					<h2 class="titulo-detalles">Recomendaciones</h2>
+					<ul>
+						<li>Tienes 30 días naturales para solicitar algún cambio a la póliza si tu plan o cobertura no están de acuerdo a lo solicitado. Te 							                  						recomendamos verificar tu póliza al recibirla.
+						</li>
+						<li>Verifica que los nombres de tus beneficiarios estén correctos.</li>
+						<li>Lee las condiciones generales de este producto, incluidas en la sección de documentación de esta página.</li>
+						<li>Informa a tus beneficiarios del seguro que has adquirido, entrégales la póliza y condiciones generales.</li>
+						<li>Los formatos que se requieren para alguna reclamación los encontrarás en la sección de Documentación de esta página.</li>
+					</ul>
+				</div>
+				<div id="contenido08" style="display: none;" class="contenido-movil">
+					<h2 class="titulo-detalles">Cotiza</h2>
+					<p>
+					Es importante señalar, que las edades de aceptación para este producto van de los 12 a los 65 años. No obstante lo anterior, esta herramienta    							proporcionará para efectos informativos el costo de la prima hasta una edad de 99 años.
+					</p>
+					<br />
+					<a onclick="Ejecuta()" style="cursor: pointer;">Ingresa aquí para cotizar tu seguro</a>
+					<br />
+					<br />
+					<p style="vertical-align: middle; text-align: justify">
+					<span>Para cualquier duda, comunícate a nuestro Centro de Atención </span>
+					<span style=" font-weight:bold;">800 837 1133 </span> disponible de lunes a viernes de 8:00 a.m. a 8:00 p.m. O envíanos un correo a:
+						<a class="tabs" style="text-decoration: underline" >atencionclientes.seguros@banorte.com</a>
+					</span>
+				</div>
+                <div id="contenido09" style="display: none;" class="contenido-movil">
+                    <h2 class="titulo-detalles">Medios de Contratación</h2>
+                    <p>Si estás interesado en el Plan AP Estandarizado y quieres que un asesor te informe más sobre éste,
+                        <a href="/contacto/contacto.html" class="contacto"><b>ingresa aquí</b></a>
+                    </p>
+                </div>
+            </div><!--/#contenido-movil-->
+			<!-- End Mobile-->
+        </div>
+        <div class="col-md-3 shortcode-item">
+            <div class="page-bar">
+                <span class="page-bar-titulo">¿Necesitas más ayuda?</span>
+                <p>Contacta a alguno de nuestros asesores especializado</p>
+                <ul class="page-bar-contacto">
+					<li><a href="/contacto/contacto.html" id="chatenvivo"><i class="fa fa-comments close_rojo"></i> Chat en vivo</a></li>
+					<li><a href="/contacto/contacto.html" class="contacto"><i class="fa fa-envelope-o close_rojo"></i> Email</a></li>
+					<li><i class="icon-telefono"></i> Centro de Contacto <br />800-500-2500</li>
+                </ul>
+					<h3></h3>
+                <ul class="page-bar-opciones">
+                    <li><a href="../gastos-medicos/directorio-medico.html"> Directorio Médico</a></li>
+                    <li><a href="../gastos-medicos/datos-generales-medico.html"> Datos Generales Médicos</a></li>
+					<li><a href="../gastos-medicos/atencion-continua.html"> Programa de atención continua</a></li>
+                    <li><a href="../gastos-medicos/asistencia-inmediata.html"> Asistencia Inmediata</a></li>
+					<!-- <li><a href="../documentacion/documentacion.html"> Documentación</a></li> -->
+                    <li><a href="../atencion-clientes/atencion-no-siniestro.html"> Aclaraciones y quejas</a></li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	<div id="new-footer">
+        <script type="text/javascript">
+            $("#new-footer").load("../footer.html");
+        </script>
+	</div>
+	    <!--empresasBanorte-->
+    <!-- Analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-23249775-5']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>
